@@ -38,11 +38,21 @@ body{
 }
 
 h1{
+    width: auto;
+    background-color: black;
     text-transform: capitalize;
     font-size: 2.5rem;
     font-family: cursive;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
 }
 
+h1:{
+    border: solid 1px white;
+}
 
 header .header__presentacion__img{
     margin: auto;
@@ -63,6 +73,7 @@ header h2{
     font-size: 2.3rem;
     margin: 1rem;
     font-weight: lighter;
+    margin-top: 5rem;
 }
 
 
