@@ -15,6 +15,8 @@
     --texto-footer-span: red;
     --texto-footer-ul: white;
     --texto-footer-derechos:grey;
+    --fondo-educacion-certificado: #BDBDBD;
+    --texto-educacion-certificado: black;
 /*tamaños de texto*/
 	--tamanio-titulos-main: 2rem;
 	--tamanio-p-main: 2rem;
@@ -47,11 +49,7 @@ h1{
     right: 0;
     left: 0;
     top: 0;
-    border-radius: 50px;
-}
-
-h1:{
-    border: solid 1px white;
+    /*meter al javascrip*//*box-shadow: 0px 2px 1px 0px white;*/
 }
 
 header .header__presentacion__img{
@@ -65,7 +63,6 @@ header .header__presentacion__img{
 header .header__presentacion__img img{
     width: 100%;
     border-radius: 30px;
-    opacity: 0.7;
 }
 
 header h2{
@@ -101,23 +98,64 @@ main .main__section{
 
 }
 
+main .main__section span{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 2rem ;
+    font-size: var(--tamanio-p-main);
+    color: var(--texto-educacion-certificado);
+    font-family: var(--fuente-p-main);
+    background-color: var(--fondo-educacion-certificado);
+}
+
 main .main__section p{
-    text-align: justify;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 2rem ;
     font-size: var(--tamanio-p-main);
     color: var(--texto-main-p);
     font-family: var(--fuente-p-main);
 }
 
 main ul li {
+    width: 90vw;
     font-size: var(--tamanio-ul-main);
     font-family: var(--fuente-ul-main);
-    margin: 1rem;
     list-style: none;
     display: flex;
     text-align: left;
     justify-content: left;
     color: var(--texto-main-ul);
-    margin-bottom: 3rem;
+    padding: 1.5rem 0;
+    margin: 0;
+    border-radius: 10rem;
+}
+
+main .main__section .educacion li+div{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+main .main__section .educacion li + div .certificados img{
+    width: 25rem;
+    margin: 0;
+    display: none;
+    padding: 1rem;
+}
+
+main .main__section .educacion li:hover + div .certificados img{
+    display: inline-block;
+}
+
+
+main .main__section .educacion li + div:hover .certificados img{
+    display: inline-block;
 }
 
 a{

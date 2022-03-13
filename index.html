@@ -4,8 +4,9 @@
         <title>CV</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="estilo.css">
-        <link rel="icon" href="perfil.jpg">
+        <link rel="icon" href="imagenes/perfil.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='acciones.js'></script>
     </head>
     <body>
         <header>
@@ -13,7 +14,7 @@
             <section class="header__presentacion">
                 <h2>Presentación</h2>
                     <figure class="header__presentacion__img">
-                    <img src="perfil.jpg">
+                    <img src="imagenes/perfil.jpg">
                     <figurecaption>Francisco Castro</figurecaption>
                 </figure>
             </section>
@@ -51,21 +52,65 @@
             </section>
             <section class="main__section">
                 <h2>Educación</h2>
-                <ul class="educacion">
-                    <li><p>Control de versiones (Capacítate CARSO)</p></li>
-                    <li><p>Mantenimiento preventivo y correctivo de computadoras (IPN)</p></li>
-                    <li><p>Reparación de celulares y tablets (Capacítate para el empleo)</p></li>
-                    <li><p>Fundamentos de programación (MiriadaX)</p></li>
-                    <li><p>Programación básica (Platzi)</p></li>
-                    <li><p>Introducción a la programación (MiriadaX)</p></li>
-                    <li><p>Java Tutorial Course (SOLOLEARN)</p></li>
-                    <li><p>CSS course (SOLOLEARN)</p></li>
-                    <li><p>HTML course (SOLOLEARN)</p></li>
-                    <li><p>Javascript course (SOLOLEARN)</p></li>
-                    <li><p>C++ course (SOLOLEARN)</p></li>
-                    <li><p>Manejo básico a intermedio de Excel.</p></li>
-                    <li><p>Manejo intermedio a avanzado de Word.</p></li>
-                    <li><p>Ingeniería en comunicaciones y electrónica (IPN-trunca)</p></li>
+                <ul class="educacion" onclick="ver()">
+                    <li onclick="ver()">
+                        <span>Mantenimiento preventivo y correctivo de computadoras (IPN)</span>
+                    </li>
+                    <div>
+                        <div class="certificados">
+                            <a href="imagenes/ipnFPC.jpeg" target="_blank">
+                                <img class="ipnPC" src="imagenes/ipnFPC.jpeg" alt="certificado"></a>
+                        </div>
+                        <div class="certificados">
+                            <a href="imagenes/ipnTPC.jpeg" target="_blank">
+                                <img class="ipnPC" src="imagenes/ipnTPC.jpeg" alt="certificado"></a>
+                            </div>
+                    </div>
+                    <li>
+                        <span>Fundamentos de programación (MiriadaX)</span>
+                    </li>
+                    <div>
+                        <div class="certificados">
+                            <a href="imagenes/fpMiriada.png" target="_blank">
+                                <img class="ipnPC" src="imagenes/fpMiriada.png" alt="certificado"></a>
+                        </div>
+                    </div>
+                    <li>
+                        <span>Programación básica (Platzi)</span>
+                    </li>
+                    <div>
+                        <div class="certificados">
+                            <a href="imagenes/pbPlatzi.png" target="_blank">
+                                <img class="ipnPC" src="imagenes/pbPlatzi.png" alt="certificado"></a>
+                        </div>
+                    </div>
+                    <li>
+                        <span>Control de versiones (Capacítate CARSO)</span>
+                    </li>
+                    <div>
+                        <div class="certificados">
+                            <a href="imagenes/cvCarso.png" target="_blank">
+                                <img class="ipnPC" src="imagenes/cvCarso.png" alt="certificado"></a>
+                        </div>
+                    </div>
+                    <li>
+                        <span>Reparación de celulares y tablets (Capacítate para el empleo)</span>
+                    </li>
+                    <div>
+                        <div class="certificados">
+                            <a href="imagenes/rCelTab.png" target="_blank">
+                                <img class="ipnPC" src="imagenes/rCelTab.png" alt="certificado"></a>
+                        </div>
+                    </div>
+                    <li><span>Introducción a la programación (MiriadaX)</span></li>
+                    <li><span>Java Tutorial Course (SOLOLEARN)</span></li>
+                    <li><span>CSS course (SOLOLEARN)</span></li>
+                    <li><span>HTML course (SOLOLEARN)</span></li>
+                    <li><span>Javascript course (SOLOLEARN)</span></li>
+                    <li><span>C++ course (SOLOLEARN)</span></li>
+                    <li><span>Manejo básico a intermedio de Excel.</span></li>
+                    <li><span>Manejo intermedio a avanzado de Word.</span></li>
+                    <li><span>Ingeniería en comunicaciones y electrónica (IPN-trunca)</span></li>
                 </ul>
                 <h3>En formación</h3>
                 <ul>
