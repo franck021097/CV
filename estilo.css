@@ -99,10 +99,13 @@ main .main__section{
 }
 
 main .main__section span{
-    width: 95%;
-    min-height: 90px;
-    text-align: left;
-    padding: 1.5rem;
+    width: 50rem;
+    min-height: 50px;
+    max-height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
     border-radius: 2rem ;
     font-size: var(--tamanio-p-main);
     color: var(--texto-educacion-certificado);
@@ -133,51 +136,71 @@ main ul li {
     padding: 0 0 1.5rem 0;
     margin: 0;
     border-radius: 10rem;
+    
+}
+
+.educacion{
+    display: flex;
+    height: 40rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+}
+
+main .educacion li{
+    scroll-snap-align: center;
 }
 
 main .main__section .educacion li+div{
-    width: 80vw;
-    margin: 0;
-    display: flex;
+    width: 0;
+    margin: 0 1rem;
+    display: hidden;
     justify-content: center;
     padding: 0;
 }
 
 main .main__section .educacion li + div .certificados img{
-    max-height: 100px;
+    width: 15rem;
     margin: 0;
+    position: relative;
     display: none;
-    padding: 0 1rem 1.5rem 0;
+    padding: 0 0 0.1rem 0;
+    justify-items: left;
+    top: 18rem;
+    left: -20rem;
 }
 
 figcaption{
     display: none;
     padding-bottom: 2rem;
 }
-
-main .main__section .educacion li + div .certificados #ipnFPC{
-    width: 50%;
+/*
+main .main__section .educacion li + div #ipnFPC{
+    position: relative;
+    display: inline;
 }
 
-main .main__section .educacion li + div .certificados img #ipnTPC{
-    width: 50%;
+main .main__section .educacion li + div #ipnTPC{
+    position: relative;
+    display: inline;
+    top: 0;
 }
-
+*/
 main .main__section .educacion li:hover + div .certificados img{
-    display: inline-block;
+    display: inline;
 }
 
 
 main .main__section .educacion li + div:hover .certificados img{
-    display: inline-block;
+    display: inline;
 }
 
 main .main__section .educacion li + div:hover .certificados figcaption{
-    display: inline-block;
+    display: inline;
 }
 
 main .main__section .educacion li:hover + div .certificados figcaption{
-    display: inline-block;
+    display: inline;
 }
 
 a{
