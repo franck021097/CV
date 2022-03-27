@@ -49,6 +49,7 @@ h1{
     right: 0;
     left: 0;
     top: 0;
+    z-index: 10;
     /*meter al javascrip*//*box-shadow: 0px 2px 1px 0px white;*/
 }
 
@@ -142,6 +143,7 @@ main ul li {
 .educacion{
     display: flex;
     height: 40rem;
+    padding: 0 14rem;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type:x proximity;
@@ -174,6 +176,8 @@ figcaption{
     display: none;
     padding-bottom: 2rem;
 }
+
+
 /*
 main .main__section .educacion li + div #ipnFPC{
     position: relative;
@@ -186,6 +190,8 @@ main .main__section .educacion li + div #ipnTPC{
     top: 0;
 }
 */
+
+
 main .main__section .educacion li:hover + div .certificados img{
     display: inline;
 }
@@ -194,15 +200,23 @@ main .main__section .educacion li:hover + div .certificados img{
 main .main__section .educacion li + div:hover .certificados img{
     display: inline;
 }
-
+/*
 main .main__section .educacion li + div:hover .certificados figcaption{
     display: inline;
+    margin: auto;
+    top: 186px;
+    position: relative;
+    left: -183px;
 }
 
 main .main__section .educacion li:hover + div .certificados figcaption{
     display: inline;
+    margin: auto;
+    top: 186px;
+    position: relative;
+    left: -183px;
 }
-
+*/
 a{
     list-style: none;
     color: white;
