@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/*colores de texto*/
+    --border-img:#F0F3F4;
+    --border-img-hover:black;
+    --texto-header: white;
+    --texto-main-h:rgb(7, 223, 90);
+    --texto--main-p: rgb(255, 255, 255);
+    --texto-main-ul:white;
+    --texto-footer-span: red;
+    --texto-footer-ul: white;
+    --texto-footer-derechos:grey;
+    --fondo-educacion-certificado: #BDBDBD;
+    --texto-educacion-certificado: black;
+/*tamaños de texto*/
+	--tamanio-titulos-main: 2rem;
+	--tamanio-p-main: 2rem;
+	--tamanio-ul-main: 2rem;
+/*fuente de letra*/
+	--fuente-titulos-main: Sans-serif;
+	--fuente-p-main: Sans-serif;
+	--fuente-ul-main: Sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    position: relative;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    color: var(--texto-header);
+    font-family: Sans-serif;
+}
+
+h1{
+    width: auto;
+    background-color: black;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-family: cursive;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    /*meter al javascrip*//*box-shadow: 0px 2px 1px 0px white;*/
+}
+
+header .header__presentacion__img{
+    margin: auto;
+    width: 150px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+header .header__presentacion__img img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+header h2{
+    text-transform: capitalize;
+    font-size: 2.3rem;
+    font-weight: lighter;
+    margin-top: 8rem;
+}
+
+
+main h2, main h3{
+    font-size: var(--tamanio-titulos-main);
+    font-family: var(--fuente-titulos-main);
+    text-transform: capitalize;
+    color: var(--texto-main-h);
+    margin-bottom: 1rem;
+}
+
+main h3{
+    display: flex;
+    justify-content: left;
+    margin: 2rem auto;
+}
+
+main .main__section{
+    min-height: 150px;
+    background-color: #424949;
+    box-shadow: 1px 5px 10px white;
+    border-radius: 15px;
+    margin: 3rem 1rem;
+    align-content: center;
+    padding: 1.2rem;
+
+}
+
+main .main__section span{
+    width: 50rem;
+    min-height: 50px;
+    max-height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 2rem ;
+    font-size: var(--tamanio-p-main);
+    color: var(--texto-educacion-certificado);
+    font-family: var(--fuente-p-main);
+    background-color: var(--fondo-educacion-certificado);
+}
+
+main .main__section p{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 2rem ;
+    font-size: var(--tamanio-p-main);
+    color: var(--texto-main-p);
+    font-family: var(--fuente-p-main);
+}
+
+main ul li {
+    width: 80vw;
+    font-size: var(--tamanio-ul-main);
+    font-family: var(--fuente-ul-main);
+    list-style: none;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    color: var(--texto-main-ul);
+    padding: 0 0 1.5rem 0;
+    margin: 0;
+    border-radius: 10rem;
+    
+}
+
+.educacion{
+    display: flex;
+    height: 40rem;
+    padding: 0 14rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+}
+
+main .educacion li{
+    scroll-snap-align: center;
+}
+
+main .main__section .educacion li+div{
+    width: 0;
+    margin: 0 1rem;
+    display: hidden;
+    justify-content: center;
+    padding: 0;
+}
+
+.certificados{
+    width: 25rem;
+}
+
+main .main__section .educacion li + div .certificados img{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: none;
+    padding: 0 0 0.1rem 0;
+    justify-items: left;
+    top: 18rem;
+    left: -20rem;
+}
+
+figcaption{
+    display: none;
+    padding-bottom: 2rem;
+}
+
+
+/*
+main .main__section .educacion li + div #ipnFPC{
+    position: relative;
+    display: inline;
+}
+
+main .main__section .educacion li + div #ipnTPC{
+    position: relative;
+    display: inline;
+    top: 0;
+}
+*/
+
+
+main .main__section .educacion li:hover + div .certificados img{
+    display: inline;
+}
+
+
+main .main__section .educacion li + div:hover .certificados img{
+    display: inline;
+}
+/*
+main .main__section .educacion li + div:hover .certificados figcaption{
+    display: inline;
+    margin: auto;
+    top: 186px;
+    position: relative;
+    left: -183px;
+}
+
+main .main__section .educacion li:hover + div .certificados figcaption{
+    display: inline;
+    margin: auto;
+    top: 186px;
+    position: relative;
+    left: -183px;
+}
+*/
+a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+footer a{
+    font-size: 1.4rem;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    position: relative;
+}
+
+footer .footer__datos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+footer .footer__datos span{
+    color: var(--texto-footer-span);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+footer .footer__datos ul li{
+    color: var(--texto-footer-ul);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+footer .footer__derechos{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--texto-footer-derechos);
+}

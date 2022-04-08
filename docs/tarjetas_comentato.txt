@@ -1,0 +1,254 @@
+<section class="main__section educacion">
+                <h2>Educación</h2>
+                <div class="cursos-terminados">
+                    <ul>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <li class="flip-card-front">
+                                    Mantenimiento preventivo y correctivo de computadoras (IPN)
+                                </li>
+                                <div>
+                                    <div class="certificados flip-card-back" ip="ipnFPC" >
+                                        <a href="imagenes/ipnFPC.jpeg" target="_blank">
+                                            <img class="ipnPC" src="imagenes/ipnFPC.jpeg" alt="certificado"></a>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--
+                            <div class="certificados" ip="ipnTPC">
+                                <a href="imagenes/ipnTPC.jpeg" target="_blank">
+                                    <img class="ipnPC" src="imagenes/ipnTPC.jpeg" alt="certificado"></a>
+                                </div>-->
+                        </div>
+                        <li>
+                            <span>Fundamentos de programación (MiriadaX)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/fpMiriada.png" target="_blank">
+                                    <img class="ipnPC" src="imagenes/fpMiriada.png" alt="certificado"></a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Programación básica (Platzi)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/pbPlatzi.png" target="_blank">
+                                    <img class="ipnPC" src="imagenes/pbPlatzi.png" alt="certificado"></a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Control de versiones (Capacítate CARSO)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/cvCarso.png" target="_blank">
+                                    <img class="ipnPC" src="imagenes/cvCarso.png" alt="certificado"></a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Reparación de celulares y tablets (Capacítate para el empleo)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/rCelTab.png" target="_blank">
+                                    <img class="ipnPC" src="imagenes/rCelTab.png" alt="certificado"></a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Introducción a la programación (MiriadaX)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/ipMiX.png" target="_blank">
+                                    <img class="ipnPC" src="imagenes/ipMiX.png" alt="certificado">
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Java Tutorial Course (SOLOLEARN)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/#0.png" target="_blank">
+                                    <img class="ipnPC" src="imagenes/#0.png" alt="certificado">
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>CSS course (SOLOLEARN)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/cssSL.jpg" target="_blank">
+                                    <img class="ipnPC" src="imagenes/cssSL.jpg" alt="certificado">
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>HTML course (SOLOLEARN)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/htmlSL.jpg" target="_blank">
+                                    <img class="ipnPC" src="imagenes/htmlSL.jpg" alt="certificado">
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Javascript course (SOLOLEARN)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/jsSL.jpg" target="_blank">
+                                    <img class="ipnPC" src="imagenes/jsSL.jpg" alt="certificado">
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>C++ course (SOLOLEARN)</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/c++SL.jpg" target="_blank">
+                                    <img class="ipnPC" src="imagenes/c++SL.jpg" alt="certificado">
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Manejo básico a intermedio de Excel.</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/excel.jpg" target="_blank">
+                                    <figure class="ipnPC">
+                                        <img src="imagenes/excel.jpg" alt="certificado">
+                                        <figcaption>Comprobable</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <li>
+                            <span>Manejo intermedio a avanzado de Word.</span>
+                        </li>
+                        <div>
+                            <div class="certificados">
+                                <a href="imagenes/word.png" target="_blank">
+                                    <figure class="ipnPC">
+                                        <img src="imagenes/word.png" alt="certificado"><br>
+                                        <figcaption>Comprobable</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="cursos-en-progreso">
+                    <h3>En formación</h3>
+                    <ul>
+                        <li>
+                            Curso de Responsive Desing: maquetación Mobile First (Platzi)
+                        </li>
+                        <li>
+                            Curso de Figma (Platzi)
+                        </li>
+                        <li>
+                            Curso de Figma avanzado (Platzi)
+                        </li>
+                        <li>
+                            Curso profesional de Git y GitHub (Platzi)
+                        </li>
+                        <li>
+                            Curso de introducción a la terminal y línea de comandos (Platzi)
+                        </li>
+                        <li>
+                            Curso de algoritmos y pensamiento lógicos (Platzi)
+                        </li>
+                        <li>
+                            Fundamentos de ingeniería en software (Platzi)
+                        </li>
+                        <li>
+                            Curso de Frontend developer (Platzi)
+                        </li>
+                        <li>
+                            Curso de diseño para developers (Platzi)
+                        </li>
+                        <li>
+                            Curso de sistemas de diseño (Platzi)
+                        </li>
+                        <li>
+                            Curso de CSS grid (Platzi)
+                        </li>
+                        <li>
+                            Curso básico de Javascript (Platzi)
+                        </li>
+                        <li>
+                            Curso básico de circuitos electrónicos (Platzi)
+                        </li>
+                        <li>
+                            Fundamentos de desarrollo de hardware con arduinio (Platzi)
+                        </li>
+                        <li>
+                            Curso de gestión efectiva del tiempo (Platzi)
+                        </li>
+                        <li>
+                            Curso para crear hábitos positivos (Platzi)
+                        </li>
+                        <li>
+                            Curso de estrategias para la productividad y la organización (Platzi)
+                        </li>
+                        <li>
+                            Curso de inglés practico: pronunciación (Platzi)
+                        </li>
+                        <li>
+                            Curso de inglés básico: pronunciación (Platzi)
+                        </li>
+                        <li>
+                            Curso de inglés practico: conversación (Platzi)
+                        </li>
+                        <li>
+                            Curso de inglés básico: conversación (Platzi)
+                        </li>
+                        <li>
+                            Curso de inglés practico: pronunciación (Platzi)
+                        </li>
+                        <li>
+                            Curso de inglés básico: pronunciación (Platzi)
+                        </li>
+                        <li>
+                            Jquery (SOLOLEARN)
+                        </li>
+                        <li>
+                            Python core (SOLOLEARN)
+                        </li>
+                        <li>
+                            Responsive web design (SOLOLEARN)
+                        </li>
+                        <li>
+                            React + redux (SOLOLEARN)
+                        </li>
+                        <li>
+                            Java (SOLOLEARN)
+                        </li>
+                        <li>
+                            PHP (SOLOLEARN)
+                        </li>
+                        <li>
+                            Machine learning (SOLOLEARN)
+                        </li>
+                        <li>
+                            Diplomado Técnico en sistemas informáticos (Capacítate CARSO)
+                        </li>
+                        <li>
+                            Diplomado Técnico en Big Data (Capacítate CARSO)
+                        </li>
+                        <li>
+                        Licenciatura en Matemáticas (UNADM)
+                        </li>
+                        <li>
+                            Ingeniería en comunicaciones y electrónica (IPN)
+                        </li>
+                    </ul>
+                </div>
+            </section>
