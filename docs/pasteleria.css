@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #ce8e60;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: white;
+    color: black;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+    text-align: left;
+    margin: 1.5rem;
+}
+
+.titulo a{
+    color: green;
+    text-align: right;
+}
+
+header .titulo h1{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 1px 15px #aaaaaa;
+    border-style: none none solid none;
+    border-color: white;
+    border-width: 0.005px;
+    padding: 1rem 0;
+    text-shadow: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header nav{
+    padding-top: 1rem;
+    margin-top: 6rem;
+    display: flex;
+    border: none;
+}
+
+header nav img{
+    width: 5rem;
+}
+
+header nav #compras{
+    right: 0;
+    position: absolute;
+}
+
+header nav .icon-menu{
+    min-width: 5rem;
+    min-height: 5rem;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+}
+
+header nav .icon-menu:hover{
+    background-color: white;
+    width: 100%;
+}
+
+header nav .icon-menu:hover ul{
+    display: block;
+    animation: abrir 20s 1;
+}
+
+
+header .icon-menu:hover #menu{
+    display: none;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: left;
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    left: -32.2rem;
+}
+
+header nav p{
+    text-align: left;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+}
+
+@keyframes abrir{
+    0%{
+        left: -32.2rem;
+    }
+    2%{
+        left: 0rem;
+    }
+    100%{
+        left: 0rem;
+    }
+}
+
+main section{
+    margin: 3rem 0;
+}
+
+main section p:nth-child(1){
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main .slogan #frase{
+    font-size: 3rem;
+    text-shadow: none;
+}
+
+main ul li{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+main ul li p{
+    margin: 1rem;
+    font-size: 2rem;
+    color: black;
+    text-shadow: white 1px 1px 1px;
+}
+
+main ul li .precio{
+    color: white;
+    text-shadow: none;
+}
+
+main ul li button{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+main ul li button:hover{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: white;
+    color: #23ff00;
+    border: none;
+    border-radius: 1rem;
+}
+
+main .Contactanos .llamado{
+    text-align: justify;
+    color: black;
+    padding: 0 2rem;
+}
+
+main .Contactanos a{
+    display: inline-block;
+    background-color: white;
+    padding: 1.8rem;
+    margin: 2rem 0;
+    border-radius: 2rem;
+    font-size: 2.2rem;
+    font-weight: 1;
+    box-shadow: #aaaaaa 5px 5px 1px;
+}
+
+main .Contactanos a:hover{
+    color: white;
+    background-color: #aaaaaa;
+    box-shadow: none;
+}
+
+footer{
+    background-color: #3d3d3e;
+    padding: 3rem 0 0rem 0;
+    color:  #d5dbdb;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+footer .redes{
+    margin: 2.5rem 0;
+}
+
+footer .redes a{
+    display: inline-block;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+footer .redes #facebook{
+    color: #3b5998;
+}
+
+footer .redes #Twitter{
+    color: #00aece;
+}
+
+footer .redes #Instagram{
+    background-image: -webkit-linear-gradient(0deg, #4c05fc , #c405fc, #fc9005, #f9cc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .derechos{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: black;
+    color: white;
+}
