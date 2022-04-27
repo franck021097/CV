@@ -165,7 +165,7 @@ main ul li p{
 
 main ul li .precio{
     color: white;
-    font-size: 2rem;
+    font-size: 9rem;
     text-shadow: none;
 }
 
@@ -248,10 +248,15 @@ footer ul li{
     text-shadow: black 1px 10px 1px;
 }
 
+footer ul li a{
+    color: white;
+}
+
 footer .derechos{
     font-size: 1.1rem;
+    padding: 2rem 0;
     font-style: italic;
     font-weight: lighter;
-    background-color: black;
+    background-color: #3d3d3e;
     color: white;
 }
