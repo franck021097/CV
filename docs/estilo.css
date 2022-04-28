@@ -17,7 +17,7 @@ html{
         --texto--main-p: rgb(255, 255, 255);
         --texto-main-ul:white;
         --texto-footer-span: red;
-        --texto-footer-ul: white;
+        --texto-footer-ul: #08a9ff;
         --texto-footer-derechos:grey;
         --fondo-educacion-certificado: #BDBDBD;
         --texto-educacion-certificado: black;
@@ -32,8 +32,8 @@ html{
     }
 
 body{
-    background-color: #283747 ;
-    color: white;
+    background-color: #3c4bda;
+    color: #0ffff8;
     text-shadow: 2px 2px 4px #000000;
     font-family: sans-serif;
 }
@@ -44,7 +44,7 @@ header{
 }
 
 header h1{
-    background-color: black;
+    background-color: #0a3593;
     box-shadow: 0px 1px 15px #aaaaaa;
     border-style: none none solid none;
     border-color: white;
@@ -60,8 +60,8 @@ header h1{
 
 header h2{
     margin: 1rem;
-    color: white;
-    text-shadow: none;
+    color: #08a9ff;
+    text-shadow: 2px 2px 4px #000000;
     font-size: 2.4rem;
 }
 
@@ -80,14 +80,20 @@ header .header__presentacion{
     border-radius: 2.4rem;
 }
 
+.header__presentacion__img img:hover{
+  opacity: 1;
+}
+
 figurecaption{
     font-size: 2.8rem;
-
+    font-weight: 400;
+    color: #0ffff8;
+    text-shadow:  #000000  0px 0px 5px,#000000  0px 2px 5px,#000000  2px 0px 5px;
 }
 
 .main__section h2 {
-    color: green;
-    text-shadow: none;
+    color: #08a9ff;
+    text-shadow: 2px 2px 4px #000000;
     font-size: 3rem;
     text-align: center;
     margin: 1.6rem 0;
@@ -101,8 +107,8 @@ figurecaption{
   }
 
   .main__section h3 {
-    color: green;
-    text-shadow: none;
+    color: #08a9ff;
+    text-shadow: 2px 2px 4px #000000;
     font-size: 2.4rem;
     margin-left: 1.6rem;
     margin-top: 1rem;
@@ -111,14 +117,15 @@ figurecaption{
 
   a {
     text-decoration: none;
-    color: white;
+    color: #0ffff8;
     font-size: 2rem;
-    text-shadow: none;
+    text-shadow: 2px 2px 4px #000000;
     margin-top: 2rem;
   }
   
   .flip-card a{
-    color: green;
+    color: #08a9ff;
+    text-shadow: 2px 2px 4px #000000;
     font-weight: bolder;
   }
 
@@ -242,14 +249,14 @@ figurecaption{
   
   footer a{
       list-style: none;
-      color: white;
+      color: #08a9ff;
       text-decoration: none;
       font-size: 2rem;
       font-size: 1.4rem;
 }
 
 footer{
-    background-color: #000000;
+    background-color: #0a3593;
     bottom: 0;
     width: 100%;
     height: auto;

@@ -26,15 +26,14 @@ a{
 
 #home{
     display: inline-block;
-    background-color: blue;
     border-radius: 100%;
-    background: linear-gradient(to right, blue, black,blue);
+    background: linear-gradient(to right, #85C1E9 , black,#85C1E9 );
     animation: quieto 5s infinite;
     
 }
 
 #home p{
-    background-color: blue;
+    background-color: #34495E;
     border-radius: 100%;
     padding: 5rem;
     margin: 1rem;

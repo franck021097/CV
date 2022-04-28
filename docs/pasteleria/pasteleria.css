@@ -4,26 +4,36 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cafe_claro: #F5CBA7;
+    --cafe_fuerte: #D35400 ;
+    --segundo_cafe_fuerte: #ce8e60;
+    --tercer_cafe_fuerte: #784212; 
+    --solo_blanco: white;
+    --solo_negro: black;
+    --v: green;
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
     text-align: center;
-    background-color: #ce8e60;
+    background-color: var(--cafe_claro);
     font-family: sans-serif;
 }
 
 header{
-    background-color: white;
-    color: black;
+    background-color: var(--solo_blanco);
+    color: var(--solo_negro);
     text-align: center;
     
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--solo_negro);
 }
 
 ul li{
@@ -33,7 +43,7 @@ ul li{
 }
 
 .titulo a{
-    color: green;
+    color: var(--v);
     text-align: right;
 }
 
@@ -74,7 +84,8 @@ header nav #compras{
 header nav .icon-menu{
     min-width: 18rem;
     min-height: 18rem;
-    padding: 0rem 2rem;
+    padding: 15rem 2rem;
+    padding-bottom: 0;
     left: 0;
     position: absolute;
     z-index: 50;
@@ -142,7 +153,7 @@ main .slogan #frase{
 
 main section p:nth-child(1){
     font-size: 6rem;
-    color: white;
+    color: #D35400 ;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -171,10 +182,11 @@ main ul li .precio{
 
 main ul li button{
     font-size: 7rem;
+    font-weight: 700;
     margin: 4rem 0;
     padding: 3rem;
     background-color: transparent;
-    color: white;
+    color: var(--tercer_cafe_fuerte);
     border: none;
 }
 
@@ -259,4 +271,10 @@ footer .derechos{
     font-weight: lighter;
     background-color: #3d3d3e;
     color: white;
+}
+
+@media (min-width: 450px) {
+    body{
+        background-color: blue;
+    }
 }
