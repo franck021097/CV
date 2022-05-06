@@ -9,6 +9,13 @@ html{
 }
 
 :root{
+     /*Todos los colores*/
+        --fondo-de-pagina: #def7ff;
+        --sombras-de-cajas: #bceeff;
+        --cajas: #8fe3ff;
+        --tarjetas: white;
+        --texto:  black;
+        --titulos: #0CB7F2;
     /*colores de texto*/
         --border-img:#F0F3F4;
         --border-img-hover:black;
@@ -32,9 +39,10 @@ html{
     }
 
 body{
-    background-color: #EEEDDE ;
-    color: #141E27;
+    background-color: var(--fondo-de-pagina) ;
+    color: var(--texto);
     text-shadow: 2px 2px 4px white;
+    text-shadow: none;
     font-family: sans-serif;
 }
 
@@ -44,8 +52,8 @@ header{
 }
 
 header h1{
-    background-color: #203239;
-    color: white;
+    background-color: var(--cajas);
+    color: var(--titulos);
     box-shadow: 0px 1px 15px #aaaaaa;
     border-style: none none solid none;
     border-color: white;
@@ -61,8 +69,9 @@ header h1{
 
 header h2{
     margin: 1rem;
-    color: #08a9ff;
+    color: var(--titulos);
     text-shadow: 2px 2px 4px #000000;
+    text-shadow: none;
     font-size: 2.4rem;
 }
 
@@ -89,20 +98,22 @@ header .header__presentacion{
 figurecaption{
     font-size: 2.8rem;
     font-weight: 400;
-    color: #0ffff8;
+    color: var(--titulos);
     text-shadow:  #000000  0px 0px 5px,#000000  0px 2px 5px,#000000  2px 0px 5px;
+    text-shadow: none;
 }
 
 .main__section{
-  background-color: #E0DDAA;
+  background-color: var(--cajas);
   padding: 2rem 0;
   margin: 2rem 1rem;
   border-radius: 2rem;
 }
 
 .main__section h2 {
-    color: #08a9ff;
+    color: var(--titulos);
     text-shadow: 2px 2px 4px #000000;
+    text-shadow: none;
     font-size: 3rem;
     text-align: center;
     margin: 1.6rem 0;
@@ -116,8 +127,9 @@ figurecaption{
   }
 
   .main__section h3 {
-    color: #08a9ff;
+    color: var(--titulos);
     text-shadow: 2px 2px 4px #000000;
+    text-shadow: none;
     font-size: 2.4rem;
     margin-left: 1.6rem;
     margin-top: 1rem;
@@ -126,15 +138,17 @@ figurecaption{
 
   a {
     text-decoration: none;
-    color: #141E27;
+    color: var(--texto);
     font-size: 2rem;
     text-shadow: 2px 2px 4px white;
+    text-shadow: none;
     margin-top: 2rem;
   }
   
   .flip-card a{
     color: #08a9ff;
     text-shadow: 2px 2px 4px #000000;
+    text-shadow: none;
     font-weight: bolder;
   }
 
@@ -166,7 +180,7 @@ figurecaption{
 
   .cursos-terminados li {
     font-size: 2.4rem;
-    color: white;
+    color: var(--texto);
     list-style: none;
     text-align: center;
     text-transform: capitalize;
@@ -223,12 +237,12 @@ figurecaption{
     align-items: center;
     flex-direction: column;
     background-color: transparent;
-    color: black;
+    color: var(--texto);
   }
 
   .flip-card-back {
-    background-color: white;
-    color: #000000;
+    background-color: var(--tarjetas);
+    color: var(--texto);
     height: 100%;
     transform: rotateY(180deg);
     border-radius: 5rem;
@@ -240,7 +254,7 @@ figurecaption{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    color: black;
+    color: var(--texto);
     text-shadow: none;
     font-size: 1.6rem;
     font-weight: bold;
@@ -258,7 +272,7 @@ figurecaption{
   
   footer a{
       list-style: none;
-      color: #08a9ff;
+      color: var(--texto);
       text-decoration: none;
       font-size: 2rem;
       font-size: 1.4rem;
@@ -266,14 +280,14 @@ figurecaption{
 }
 
 footer{
-    background-color: #203239;
+    background-color: var(--cajas);
     bottom: 0;
     width: 100%;
     height: auto;
     display: grid;
     position: relative;
     text-shadow: none;
-    color: #0ffff8;
+    color: var(--texto);
 }
 
 footer .footer__datos{
@@ -284,7 +298,7 @@ footer .footer__datos{
 }
 
 footer .footer__datos span{
-    color: var(--texto-footer-span);
+    color: var(--titulos);
     font-size: 1.8rem;
     text-transform: capitalize;
     text-align: center;
@@ -292,7 +306,7 @@ footer .footer__datos span{
 }
 
 footer .footer__datos ul li{
-    color: var(--texto-footer-ul);
+    color: var(--texto);
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     list-style: none;
@@ -305,6 +319,8 @@ footer .footer__datos ul li{
 footer .footer__derechos{
     font-size: 1.2rem;
     font-style: italic;
+    font-weight: lighter;
     text-align: center;
-    color: var(--texto-footer-derechos);
+    color: var(--texto);
+    text-shadow: 1px 0 10px white;
 }
