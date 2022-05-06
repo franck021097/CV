@@ -12,13 +12,13 @@ html{
     /*colores de texto*/
         --border-img:#F0F3F4;
         --border-img-hover:black;
-        --texto-header: white;
-        --texto-main-h:rgb(7, 223, 90);
+        --texto-header: #203239;
+        --texto-main-h: #203239;
         --texto--main-p: rgb(255, 255, 255);
         --texto-main-ul:white;
         --texto-footer-span: red;
         --texto-footer-ul: #08a9ff;
-        --texto-footer-derechos:grey;
+        --texto-footer-derechos: white;
         --fondo-educacion-certificado: #BDBDBD;
         --texto-educacion-certificado: black;
     /*tamaños de texto*/
@@ -32,9 +32,9 @@ html{
     }
 
 body{
-    background-color: #3c4bda;
-    color: #0ffff8;
-    text-shadow: 2px 2px 4px #000000;
+    background-color: #EEEDDE ;
+    color: #141E27;
+    text-shadow: 2px 2px 4px white;
     font-family: sans-serif;
 }
 
@@ -44,7 +44,8 @@ header{
 }
 
 header h1{
-    background-color: #0a3593;
+    background-color: #203239;
+    color: white;
     box-shadow: 0px 1px 15px #aaaaaa;
     border-style: none none solid none;
     border-color: white;
@@ -78,6 +79,7 @@ header .header__presentacion{
 .header__presentacion__img img{
     width: 100%;
     border-radius: 2.4rem;
+    opacity: 0.8;
 }
 
 .header__presentacion__img img:hover{
@@ -89,6 +91,13 @@ figurecaption{
     font-weight: 400;
     color: #0ffff8;
     text-shadow:  #000000  0px 0px 5px,#000000  0px 2px 5px,#000000  2px 0px 5px;
+}
+
+.main__section{
+  background-color: #E0DDAA;
+  padding: 2rem 0;
+  margin: 2rem 1rem;
+  border-radius: 2rem;
 }
 
 .main__section h2 {
@@ -117,9 +126,9 @@ figurecaption{
 
   a {
     text-decoration: none;
-    color: #0ffff8;
+    color: #141E27;
     font-size: 2rem;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px white;
     margin-top: 2rem;
   }
   
@@ -144,8 +153,8 @@ figurecaption{
 
 /*inicia prueba*/
 .cursos-terminados {
-    width: 100vw;
-    height: 400px;
+    max-width: 100vw;
+    min-height: 400px;
     display: flex;
     margin: 0rem;
     background-color: transparent;
@@ -253,15 +262,18 @@ figurecaption{
       text-decoration: none;
       font-size: 2rem;
       font-size: 1.4rem;
+      text-shadow: none;
 }
 
 footer{
-    background-color: #0a3593;
+    background-color: #203239;
     bottom: 0;
     width: 100%;
     height: auto;
     display: grid;
     position: relative;
+    text-shadow: none;
+    color: #0ffff8;
 }
 
 footer .footer__datos{
@@ -287,6 +299,7 @@ footer .footer__datos ul li{
     margin: 0rem 1rem;
     text-transform: capitalize;
     text-align:left;
+    text-shadow: none;
 }
 
 footer .footer__derechos{
