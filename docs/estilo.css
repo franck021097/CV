@@ -10,12 +10,12 @@ html{
 
 :root{
      /*Todos los colores*/
-        --fondo-de-pagina: #def7ff;
+        --fondo-de-pagina: #EEEEEE;
         --sombras-de-cajas: #bceeff;
-        --cajas: #8fe3ff;
+        --cajas: #00ADB5;
         --tarjetas: white;
-        --texto:  black;
-        --titulos: #0CB7F2;
+        --texto:  #393E46;
+        --titulos: #222831;
     /*colores de texto*/
         --border-img:#F0F3F4;
         --border-img-hover:black;
