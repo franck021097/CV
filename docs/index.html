@@ -19,9 +19,23 @@
           <figurecaption>Francisco Castro</figurecaption>
         </figure>
       </section>
+	  <section class="menu">
+		  <nav>
+			  <ul>
+				  <li onclick="ver('objetivo')">objetivo</li>
+				  <li onclick="ver('experiencia')">experiencia</li>
+				  <li onclick="ver('interes')">interes</li>
+				  <li onclick="ver('educacion')">educacion</li>
+				  <li onclick="ver('Información_personal')">Información personal</li>
+				  <li onclick="ver('idiomas')">idiomas</li>
+				  <li onclick="ver('aptitudes')">aptitudes</li>
+				  <li onclick="ver('proyectos')">proyectos</li>
+			  </ul>
+		  </nav>
+	  </section>
     </header>
     <main class="main">
-      <section class="main__section">
+      <section class="main__section" id="objetivo">
         <h2>Objetivo</h2>
         <p>
           Formar parte de una empresa en la que pueda poner en práctica todos
@@ -32,7 +46,7 @@
           e intelectual.
         </p>
       </section>
-      <section class="main__section experiencia">
+      <section class="main__section" id="experiencia">
         <h2>experiencia</h2>
         <div class="formales">
           <h3>Formales</h3>
@@ -59,7 +73,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__section">
+      <section class="main__section" id="interes">
         <h2>intereses</h2>
         <p>
           Me gusta leer, pero, lo hago poco por tiempo, de 1 a 2 libros por año,
@@ -70,7 +84,7 @@
         </p>
       </section>
       <!--aqui va la educacion-->
-						<section class="main__section educacion">
+	  <section class="main__section" id="educacion">
 							<a id="educacion" href="educacion.html" target="_blank">
 									<h2>Educación</h2>
 							</a>
@@ -417,9 +431,9 @@
 											</div>
 									</div>-->
 							</div>
-					</section>
+	  </section>
 
-      <section class="main__section">
+      <section class="main__section" id="Información_personal">
         <h2>Información personal</h2>
         <ul class="inf_personal">
           <li>Género y estado civil: Hombre, soltero.</li>
@@ -427,12 +441,12 @@
           <li>Nacionalidad: Mexicano</li>
         </ul>
       </section>
-      <section class="main__section">
+      <section class="main__section" id="idiomas">
         <h2>idiomas</h2>
         <p>Inglés: intermedio.</p>
         <p>Portugués: básico.</p>
       </section>
-      <section class="main__section">
+      <section class="main__section" id="aptitudes">
         <h2>aptitudes</h2>
         <ul>
           <li>Office (WORD, EXCEL, POWER POINT, EXCEL, OUTLOOK)</li>
@@ -448,11 +462,12 @@
           <li>Logro constante de objetivos</li>
         </ul>
       </section>
-      <section class="main__section">
+      <section class="main__section" id="proyectos">
         <h2>proyectos</h2>
         <ul>
           <li><a href="/Cripto_mensajes/index.html">Cripto-mensajes</a></li>
 		  <li><a href="pasteleria/pasteleria.html">Pasteleria</a></li>
+		  <li><a href="paleteria/paletas.html">Paleteria</a></li>
         </ul>
       </section>
     </main>

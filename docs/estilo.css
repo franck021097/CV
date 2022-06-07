@@ -52,8 +52,8 @@ header{
 }
 
 header h1{
-    background-color: var(--cajas);
-    color: var(--titulos);
+    background-color: var(--texto);
+    color: var(--fondo-de-pagina);
     box-shadow: 0px 1px 15px #aaaaaa;
     border-style: none none solid none;
     border-color: white;
@@ -103,11 +103,32 @@ figurecaption{
     text-shadow: none;
 }
 
+.menu{
+  font-size: 2.4rem;
+  margin: 5rem 0;
+}
+
+.menu nav ul{
+  display: grid;
+  grid-template-columns: repeat(8,1fr );
+}
+
+.menu nav ul li{
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .main__section{
+  display: none;
   background-color: var(--cajas);
   padding: 2rem 0;
   margin: 2rem 1rem;
   border-radius: 2rem;
+}
+
+#objetivo{
+  display: block;
 }
 
 .main__section h2 {
@@ -188,8 +209,8 @@ figurecaption{
 
   .cursos-terminados img {
     width: 100%;
-    border-radius: 5rem;
     height: 100%;
+    border-radius: 5rem;
   }
 
   #ipnFPC {
@@ -198,8 +219,8 @@ figurecaption{
 
   .flip-card {
     background-color: transparent;
-    min-width: 250px;
-    height: 300px;
+    min-width: 25rem;
+    height: 25rem;
     perspective: 1000px;
     margin: auto 4rem;
     scroll-snap-align: center;
@@ -224,8 +245,8 @@ figurecaption{
   .flip-card-front,
   .flip-card-back {
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -272,7 +293,7 @@ figurecaption{
   
   footer a{
       list-style: none;
-      color: var(--texto);
+      color: var(--fondo-de-pagina);
       text-decoration: none;
       font-size: 2rem;
       font-size: 1.4rem;
@@ -280,39 +301,41 @@ figurecaption{
 }
 
 footer{
-    background-color: var(--cajas);
+    background-color: var(--texto);
     bottom: 0;
     width: 100%;
     height: auto;
     display: grid;
     position: relative;
     text-shadow: none;
-    color: var(--texto);
+    color: var(--fondo-de-pagina);
 }
 
 footer .footer__datos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: left;
+    text-align: center;
     padding: 0rem;
 }
 
 footer .footer__datos span{
-    color: var(--titulos);
+    color: var(--fondo-de-pagina);
     font-size: 1.8rem;
     text-transform: capitalize;
-    text-align: center;
     margin-top: 1rem;
-}
-
-footer .footer__datos ul li{
-    color: var(--texto);
+  }
+  
+  footer .footer__datos ul{
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+  }
+  footer .footer__datos ul li{
+    color: var(--fondo-de-pagina);
     font-size: 1.4rem;
-    margin-bottom: 0.5rem;
     list-style: none;
-    margin: 0rem 1rem;
+    margin: auto;
     text-transform: capitalize;
-    text-align:left;
     text-shadow: none;
 }
 
@@ -321,6 +344,7 @@ footer .footer__derechos{
     font-style: italic;
     font-weight: lighter;
     text-align: center;
-    color: var(--texto);
+    color: var(--fondo-de-pagina);
     text-shadow: 1px 0 10px white;
+    text-shadow: none;
 }
