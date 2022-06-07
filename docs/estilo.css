@@ -106,7 +106,8 @@ figurecaption{
 .menu{
   font-size: 2.4rem;
   display: grid;
-  place-content: center;
+  place-items: center;
+  margin: 0;
 }
 
 .menu nav ul{
@@ -118,29 +119,26 @@ figurecaption{
 @media only screen and (max-width: 700px) {
   .menu nav ul{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
   
-  footer{
-    display: block;
+  .menu nav ul li{
+    font-size: 2rem;
+    font-weight: bolder;
   }
-
-  footer .footer__datos{
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 0rem;
-}
+  
 }
 
 @media only screen and (max-width: 550px) {
   .menu nav ul{
+    place-content: center;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
-  footer{
-    display: block;
+  .menu nav ul li{
+    font-size: 1.1rem;
+    margin: 5px;
   }
 
 }
