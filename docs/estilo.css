@@ -104,51 +104,31 @@ figurecaption{
 }
 
 .menu{
-  font-size: 2.4rem;
-  display: grid;
-  place-items: center;
-  margin: 0;
+  margin: 2rem auto;
 }
 
 .menu nav ul{
-  place-content: center;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-}
-
-@media only screen and (max-width: 700px) {
-  .menu nav ul{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-  }
-  
-  .menu nav ul li{
-    font-size: 2rem;
-    font-weight: bolder;
-  }
-  
-}
-
-@media only screen and (max-width: 550px) {
-  .menu nav ul{
-    place-content: center;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .menu nav ul li{
-    font-size: 1.1rem;
-    margin: 5px;
-  }
-
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 5px;
 }
 
 .menu nav ul li{
-  text-align: left;
-  margin: 2rem;
-  list-style: none;
+  padding: 2rem;
+  border-radius: 2rem;
+  place-self: center;
+  background-color: #00ADB5;
+  font-size:large;
   cursor: pointer;
-}
+  list-style: none;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .menu nav ul li{
+      font-size: small;
+    }
+  
+  }
 
 .main__section{
   display: none;
