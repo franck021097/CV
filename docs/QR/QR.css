@@ -1,0 +1,31 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #224f62;
+}
+
+section{
+    display: grid;
+    place-content: center;
+    margin: 10rem 0;
+}
+
+p{
+    background-color: black;
+    padding: 3rem 6rem;
+    font-size: medium;
+    color: aliceblue;
+}
+
+#Codigo{
+    border: 1rem solid #151d20;
+    
+}

@@ -39,7 +39,9 @@ html{
     }
 
 body{
-    background-color: var(--fondo-de-pagina) ;
+    background-image: url("imagenes/Fondo_principal.jpg");
+    background-repeat: no-repeat round;
+    background-size:cover;
     color: var(--texto);
     text-shadow: 2px 2px 4px white;
     text-shadow: none;
@@ -47,9 +49,41 @@ body{
 }
 
 header{
+
     text-transform: capitalize;
     text-align: center;
 }
+
+main{
+}
+
+#preload{
+  display: none;
+}
+
+#preload ul{
+  width: 100vw;
+  height: 100vh;
+  font-size: 2.4rem;
+  color: white;
+  background-color: darkblue;
+  display: grid;
+  place-content: center;
+  padding: 0 10rem;
+  z-index: 10;
+}
+
+#preload ul li{
+  cursor: pointer;
+  list-style: none;
+}
+
+#preload ul p{
+  margin-bottom: 10rem;
+}
+
+
+
 
 header h1{
     background-color: var(--texto);
@@ -150,6 +184,10 @@ figurecaption{
     text-align: center;
     margin: 1.6rem 0;
     text-transform: capitalize;
+  }
+
+  .main__section h2:hover{
+    text-decoration: underline;
   }
 
   .main__section p {
