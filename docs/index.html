@@ -9,18 +9,25 @@
     <script src="acciones.js"></script>
   </head>
   <body>
-	  <section id="preload">
-		  <ul>
-			  <p>Bienvenido, seleciona tu usuario:</p>
-			  <li onclick="usuario()">Reclutador</li>
-			  <li onclick="usuario()">Cliente</li>
-			  <li onclick="usuario()">Dame el Tour</li>
-			</ul>
+	  <section onclick="usuario()" id="preload">
+			  <p>Hello Word</p>
 		</section>
+		<nav id="opciones">
+			<ul onclick="usuario()">
+				<li onclick="ver('objetivo')">objetivo</li>
+				<li onclick="ver('experiencia')">experiencia</li>
+				<li onclick="ver('interes')">interes</li>
+				<li onclick="ver('educacion')">educacion</li>
+				<li onclick="ver('Información_personal')">Información personal</li>
+				<li onclick="ver('idiomas')">idiomas</li>
+				<li onclick="ver('aptitudes')">aptitudes</li>
+				<li onclick="ver('proyectos')">proyectos</li>
+			</ul>
+		</nav>
     <header id="header">
       <h1>francisco javier castro alcantar</h1>
       <section class="header__presentacion">
-        <h2>Presentación</h2>
+        <h2>Introduce myself</h2>
         <figure class="header__presentacion__img">
           <!--<img src="imagenes/perfil.jpg" alt="foto de perfil" />-->
 		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCHpDNM7GTGwcDglgSicG130ypxTI7UGoCg&usqp=CAU" alt="Gatito pidiendo dinero" title="imagen sacada de internet" />
@@ -28,18 +35,9 @@
         </figure>
       </section>
 	  <section class="menu">
-		  <nav>
-			  <ul>
-				  <li onclick="ver('objetivo')">objetivo</li>
-				  <li onclick="ver('experiencia')">experiencia</li>
-				  <li onclick="ver('interes')">interes</li>
-				  <li onclick="ver('educacion')">educacion</li>
-				  <li onclick="ver('Información_personal')">Información personal</li>
-				  <li onclick="ver('idiomas')">idiomas</li>
-				  <li onclick="ver('aptitudes')">aptitudes</li>
-				  <li onclick="ver('proyectos')">proyectos</li>
-			  </ul>
-		  </nav>
+		<div class="cont-menu">
+			<img onclick="ocultar()" id="menu" src="imagenes/menu1.png" alt="menu">
+		</div>
 	  </section>
     </header>
     <main id="main" class="main">
@@ -57,7 +55,7 @@
       <section class="main__section" id="experiencia">
         <h2>experiencia</h2>
         <div class="formales">
-          <h3>Formales</h3>
+          <h2>Formales</h2>
           <p>
             2018 (2 meses) Banco Azteca (Outsourcing) Asesor telefónico en
             cobranza.
@@ -72,7 +70,7 @@
           </ul>
         </div>
         <div class="informales">
-          <h3>Informales</h3>
+          <h2>Informales</h2>
           <ul>
             <li>
               2017 -A la fecha Negocio propio Servicio técnico en mantenimiento
@@ -207,6 +205,7 @@
               >Escuela de baile</a
             >
           </li>
+		  <li><a href="https://www.flaticon.es/iconos-gratis/menu" title="menú iconos">Menú iconos creados por Hogr - Flaticon</a></li>
           <li>Otro</li>
           <li>...</li>
         </ul>

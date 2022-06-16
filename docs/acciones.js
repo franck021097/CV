@@ -3,8 +3,17 @@ function usuario(){
     i= document.getElementById("header").style.display="block";
     i= document.getElementById("main").style.display="block";
     i= document.getElementById("footer").style.display="grid";
+    i= document.getElementById("opciones").style.display="none";
 }
 
+function ocultar(){
+
+    var i= document.getElementById("preload").style.display="none";
+    i= document.getElementById("header").style.display="none";
+    i= document.getElementById("main").style.display="none";
+    i= document.getElementById("footer").style.display="none";
+    i= document.getElementById("opciones").style.display="block";
+}
 
 function ver(ver){
 
