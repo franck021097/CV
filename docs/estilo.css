@@ -416,6 +416,30 @@ footer .footer__datos span{
     text-shadow: none;
 }
 
+
+.tecnologias p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 5rem 0;
+}
+
+.img-tecnologias{
+  width: 3rem;
+}
+
+.tecnologias ul{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  place-content: center;
+}
+
+.tecnologias li{
+  font-size: 1.1rem;
+  list-style: none;
+  display: inline-block;
+}
+
 footer .footer__derechos{
     font-size: 1.2rem;
     margin-top: 2rem;
