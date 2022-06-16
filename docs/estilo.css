@@ -148,7 +148,7 @@ figurecaption{
   
   #opciones ul{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
   gap: 5px;
 }
 
