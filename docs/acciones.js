@@ -12,7 +12,7 @@ function ocultar(){
     i= document.getElementById("header").style.display="none";
     i= document.getElementById("main").style.display="none";
     i= document.getElementById("footer").style.display="none";
-    i= document.getElementById("opciones").style.display="block";
+    i= document.getElementById("opciones").style.display="grid";
 }
 
 function ver(ver){
