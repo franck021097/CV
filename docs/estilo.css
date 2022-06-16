@@ -59,7 +59,6 @@ main{
   background-color: var(--cajas);
   display: grid;
   place-content: center;
-  padding: 0 10rem;
   z-index: 10;
   /*animation: preload 1s 2;*/
 }
@@ -376,6 +375,7 @@ figurecaption{
 }
 
 footer{
+    margin-top: 2rem;
     background-color: var(--cajas);
     display: grid;
     display: none;
@@ -423,6 +423,4 @@ footer .footer__derechos{
     font-weight: lighter;
     text-align: center;
     color: var(--texto);
-    text-shadow: 1px 0 10px white;
-    text-shadow: none;
 }
