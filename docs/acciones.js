@@ -1,13 +1,43 @@
+/*var anim=document.getElementById("preload").style.display="none";
+
+if(anim.style.opacity<0.5){
+    anim.style.display="none";
+}*/
+
+
+
+function preload(){
+setTimeout(
+function(){
+    var i= document.getElementById("preload-p");
+    i.innerHTML="Esto no es solo una pagina"
+},2000);
+
+
+setTimeout(
+function(){
+    var i= document.getElementById("preload-p");
+    i.innerHTML="Es una experiencia";
+},5000);
+
+setTimeout(
+function(){
+    var im= document.getElementById("flecha");
+    im.setAttribute("src","imagenes/Flecha.png");
+},6500);
+
+}
+
 function usuario(){
     var i= document.getElementById("preload").style.display="none";
     i= document.getElementById("header").style.display="block";
     i= document.getElementById("main").style.display="block";
     i= document.getElementById("footer").style.display="grid";
     i= document.getElementById("opciones").style.display="none";
+    var im= document.getElementById("flecha").style.display="none";
 }
 
 function ocultar(){
-
     var i= document.getElementById("preload").style.display="none";
     i= document.getElementById("header").style.display="none";
     i= document.getElementById("main").style.display="none";

@@ -61,11 +61,29 @@ main{
   place-content: center;
   padding: 0 10rem;
   z-index: 10;
+  /*animation: preload 1s 2;*/
 }
 
 #preload p{
   cursor: pointer;
   margin-bottom: 10rem;
+}
+
+#flecha{
+  width: 10rem;
+  cursor: pointer;
+  justify-self: center;
+}
+
+
+
+@keyframes preload{
+  from{
+    opacity: 1;
+  }
+
+  to{opacity: 0.2;
+  }
 }
 
 
@@ -76,7 +94,7 @@ header h1{
     border-style: none none solid none;
     border-color: white;
     border-width: 0.005px;
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-shadow: none;
     position: fixed;
     left: 0;
@@ -126,9 +144,10 @@ figurecaption{
 
   .cont-menu{
     position: absolute;
-    top: 7rem;
+    top: 0rem;
     display: grid;
-    width: 100vw;
+    width: 98vw;
+    padding: 0 1rem;
   }
 
   #menu{
@@ -154,7 +173,6 @@ figurecaption{
 
 #opciones ul li{
   padding: 2rem;
-  border: solid 2px 0 1px  #030399;
   border-radius: 2rem;
   place-self: center;
   font-size:large;
@@ -189,10 +207,6 @@ figurecaption{
     margin: 1.6rem 0;
     text-transform: capitalize;
     text-shadow: 1px 1px 5px var(--sombra-texto);
-  }
-
-  .main__section h2:hover{
-    text-decoration: underline;
   }
   
   .main__section p {
@@ -331,6 +345,21 @@ figurecaption{
   .flip-card-back:hover {
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
+  }
+
+  .contenedor-mas{
+    background-color: #3f4e6a;
+    display: grid;
+    place-content: center;
+    min-width: 23rem;
+    height: 225px;
+    scroll-snap-align: center;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+
+  .contenedor-mas p a{
+    font-size: 3.8rem;
   }
 
 /*fin de la prueba*/

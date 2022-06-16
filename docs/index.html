@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="acciones.js"></script>
   </head>
-  <body>
+  <body onload="preload()">
 	  <section onclick="usuario()" id="preload">
-			  <p>Hello Word</p>
+			  <p id="preload-p">¡Hola Web!</p>
+        <img onclick="usuario()" id="flecha" src="imagenes/Flecha0.jpg" alt="Flecha seguir">
 		</section>
-		<nav id="opciones">
-			<ul onclick="usuario()">
+		<nav onclick="usuario()" id="opciones">
+			<ul>
 				<li onclick="ver('objetivo')">objetivo</li>
 				<li onclick="ver('experiencia')">experiencia</li>
 				<li onclick="ver('interes')">interes</li>
@@ -25,9 +26,12 @@
 			</ul>
 		</nav>
     <header id="header">
-      <h1>francisco javier castro alcantar</h1>
+      <h1>francisco castro<div class="cont-menu">
+        <img onclick="ocultar()" id="menu" src="imagenes/menu.png" alt="menu">
+      </div></h1>
+      
       <section class="header__presentacion">
-        <h2>Introduce myself</h2>
+        <h2>Portafolio</h2>
         <figure class="header__presentacion__img">
           <!--<img src="imagenes/perfil.jpg" alt="foto de perfil" />-->
 		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCHpDNM7GTGwcDglgSicG130ypxTI7UGoCg&usqp=CAU" alt="Gatito pidiendo dinero" title="imagen sacada de internet" />
@@ -35,9 +39,6 @@
         </figure>
       </section>
 	  <section class="menu">
-		<div class="cont-menu">
-			<img onclick="ocultar()" id="menu" src="imagenes/menu1.png" alt="menu">
-		</div>
 	  </section>
     </header>
     <main id="main" class="main">
@@ -91,7 +92,7 @@
       </section>
       <!--aqui va la educacion-->
 	  <section class="main__section" id="educacion">
-		  <a id="educacion" href="educacion.html" target="_blank"><h2>Educación</h2></a>
+		  <h2>Educación</h2>
 		  <div  class="cursos-terminados">
 			  <div class="flip-card">
 				  <div class="flip-card-inner">
@@ -117,19 +118,24 @@
 						  </div>
 					  </div>
 				  </div>
-				<div class="flip-card">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<img  id="3" class="ipnPC" src="imagenes/##.png" alt="certificado" />
-						  </div>
-						  <div class="flip-card-back">
-							  <span class="flip-card-front">...
-								  <a href="imagenes/##.png" target="_blank">ver</a>
-							  </span>
-						  </div>
-					  </div>
-				  </div>
-			  </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img  id="3" class="ipnPC" src="imagenes/##.png" alt="certificado" />
+                </div>
+                <div class="flip-card-back">
+                  <span class="flip-card-front">...
+                    <a href="imagenes/##.png" target="_blank">ver</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-mas">
+              <p><a href="educacion.html">+23</a></p>
+              </div>
+            </div>
+          </div>
+          </div>
 			  <div>
 			  </div>
 
@@ -167,7 +173,7 @@
       <section class="main__section" id="proyectos">
         <h2>proyectos</h2>
         <ul>
-          <li><a href="/Cripto_mensajes/index.html">Cripto-mensajes</a></li>
+          <li><a href="criptoMensajes/Cripto.html">Cripto-mensajes</a></li>
 		  <li><a href="pasteleria/pasteleria.html">Pasteleria</a></li>
 		  <li><a href="paleteria/paletas.html">Paleteria</a></li>
 		  <li><a href="QR/QR.html" target="_blank" >Codigo</a></li>
