@@ -23,6 +23,7 @@ function(){
 setTimeout(
 function(){
     var im= document.getElementById("flecha");
+    im.setAttribute("onclick","usuario()");
     im.setAttribute("src","imagenes/Flecha.png");
 },6500);
 
