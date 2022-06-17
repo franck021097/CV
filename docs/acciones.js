@@ -11,21 +11,27 @@ setTimeout(
 function(){
     var i= document.getElementById("preload-p");
     i.innerHTML="Esto no es solo una pagina"
-},2000);
+},3000);
 
 
 setTimeout(
 function(){
     var i= document.getElementById("preload-p");
     i.innerHTML="Es una experiencia";
-},5000);
+},6000);
+
+setTimeout(
+function(){
+    var i= document.getElementById("preload-p");
+    i.innerHTML="";
+},8900);
 
 setTimeout(
 function(){
     var im= document.getElementById("flecha");
     im.setAttribute("onclick","usuario()");
     im.setAttribute("src","imagenes/Flecha.png");
-},6500);
+},9000);
 
 }
 

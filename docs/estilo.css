@@ -31,14 +31,10 @@ html{
     }
 
 body{
-    /*background-image: url("https://picsum.photos/200");
-    background-repeat: no-repeat round;
-    background-size:cover;*/
     background-color: var(--fondo-de-pagina);
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
     color: var(--texto);
-    text-shadow: 2px 2px 4px white;
-    text-shadow: none;
-    font-family: sans-serif;
 }
 
 header{
@@ -60,28 +56,30 @@ main{
   display: grid;
   place-content: center;
   z-index: 10;
-  /*animation: preload 1s 2;*/
 }
 
 #preload p{
   cursor: pointer;
   margin-bottom: 10rem;
+  animation: preload 3s 4;
 }
 
 #flecha{
   width: 10rem;
   cursor: pointer;
   justify-self: center;
+  
 }
 
-
-
 @keyframes preload{
-  from{
-    opacity: 1;
+  0%{
+    opacity: 0;
   }
 
-  to{opacity: 0.2;
+  50%{opacity: 1;
+  }
+
+  100%{opacity: 0;
   }
 }
 
