@@ -1,34 +1,38 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
 :root{
-     /*Todos los colores*/
-        --fondo-de-pagina: #3f4e6a;
-        --sombras-de-cajas: #bceeff;
-        --cajas: #12192a;
-        --tarjetas: white;
-        --border-img:#F0F3F4;
-        --border-img-hover:black;
-        /*colores de texto*/
-        --titulos: #030399;
-        --texto:  #ffffff;
-        --sombra-texto: #ffffff;
-    /*tamaños de texto*/
-        --tamanio-titulos-main: 2rem;
-        --tamanio-p-main: 2rem;
-        --tamanio-ul-main: 2rem;
-    /*fuente de letra*/
-        --fuente-titulos-main: Sans-serif;
-        --fuente-p-main: Sans-serif;
-        --fuente-ul-main: Sans-serif;
-    }
+  /*Todos los colores*/
+     --fondo-de-pagina: #3f4e6a;
+     --sombras-de-cajas: #bceeff;
+     --cajas: #12192a;
+     --tarjetas: white;
+     --border-img:#F0F3F4;
+     --border-img-hover:black;
+     /*colores de texto*/
+     --titulos: #030399;
+     --texto:  #ffffff;
+     --sombra-texto: #ffffff;
+ /*tamaños de texto*/
+     --tamanio-titulos-main: 2rem;
+     --tamanio-p-main: 2rem;
+     --tamanio-ul-main: 2rem;
+ /*fuente de letra*/
+     --fuente-titulos-main: Sans-serif;
+     --fuente-p-main: Sans-serif;
+     --fuente-ul-main: Sans-serif;
+ }
+
+html{
+  font-size: 62.5%;;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}  
 
 body{
     background-color: var(--fondo-de-pagina);
@@ -36,6 +40,7 @@ body{
     font-size: 16px;
     color: var(--texto);
 }
+
 
 header{
   display: none;
