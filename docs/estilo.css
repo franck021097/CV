@@ -153,9 +153,6 @@ figurecaption{
   }
 
   #menu{
-    opacity: 0.5;
-    width: 6rem;
-    height: 6rem;
     place-self: end;
   }
 
