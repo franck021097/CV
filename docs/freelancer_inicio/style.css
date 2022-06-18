@@ -7,16 +7,16 @@
     --grisclaro: #dfe9f3;
 }
 
+/*Globales*/
 *, *:before, *:after {
     box-sizing: inherit;
-  }  
+}  
 
-/*Globales*/
 
 html{
     font-size: 62.5%;;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
+
 
 body{
     font-size: 16px;

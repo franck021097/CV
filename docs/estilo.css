@@ -159,33 +159,58 @@ figurecaption{
   #menu:hover{
     opacity: 1;
   }
-
+/*
   #opciones{
     margin: 2rem auto;
+    background-color: red;
   }
   
   #opciones ul{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
-  gap: 5px;
-}
-
-#opciones ul li{
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+    gap: 5px;
+    background-color: #030399;
+    margin: 0 auto;
+  }
+  
+  #opciones ul li{
+  background-color: #030;
   padding: 2rem;
   border-radius: 2rem;
   place-self: center;
+  text-align: right;
   font-size:large;
   cursor: pointer;
   list-style: none;
   text-transform: capitalize;
   }
+*/
+#opciones{
+  display: none;
+  max-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  
+}
 
-  @media only screen and (max-width: 550px) {
+#opciones ul{
+  list-style: none;
+  height: 90%;
+}
+
+#opciones ul li{
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
     .menu nav ul li{
       font-size: small;
-    }
-  
-  }
+    }  
+}
 
 .main__section{
   display: none;
