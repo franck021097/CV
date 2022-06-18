@@ -72,12 +72,12 @@ for(let i=0; i<3; i++){
 console.log("los valores son: " +"\n"+indice[0]+"\n"+ indice[1] +"\n"+indice[2]);
 
 
-
+/*
 for (let i=0; i<3; i++) {
-    var valor =document.getElementById(imagenes[i]);
+    var valor =document.getElementsByClassName(imagenes[i]);
     valor.setAttribute("src", nombres_certificados[indice[i]]);
     
-}
+}*/
 
 
 for(let i of secciones){
