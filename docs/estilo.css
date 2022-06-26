@@ -91,7 +91,9 @@ body{
 /*Opciones*/
 
 #opciones{
+  background-color: var(--cajas);
   display: none;
+  height: 100vh;
   text-transform: capitalize;
   place-content: center;
   padding: 5rem 0;
