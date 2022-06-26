@@ -54,7 +54,7 @@ function ver(ver){
 var secciones=["experiencia", "objetivo","experiencia","interes","educacion","Información_personal","idiomas",
 "aptitudes","proyectos"];
 
-var imagenes=["1","2","3"];
+var imagenes=["1","2","3","4","5"];
 
 var nombres_certificados=[
     "imagenes/ipnFPC.jpeg","imagenes/cvCarso.png","imagenes/rCelTab.png","imagenes/fpMiriada.png","imagenes/ipMiX.png","imagenes/pbPlatzi.png","imagenes/ccbPlatzi.png","imagenes/cfeyePlatzi.png","imagenes/cdhtml-cssPlatzi.png","imagenes/cphtml-cssPlatzi.png","imagenes/cssiPlatzi.png","imagenes/cetebPlatzi.png","imagenes/tipPlatzi.png","imagenes/cipPlatzi.png","imagenes/ciba1psPlatzi.png","imagenes/cpreworkPlatzi.png","imagenes/crdmfPlatzi.png","imagenes/cssSL.jpg","imagenes/htmlSL.jpg","imagenes/jsSL.jpg","imagenes/c++SL.jpg","imagenes/sqlSL.jpg","imagenes/excel.jpg","imagenes/word.png"];
@@ -62,14 +62,14 @@ var nombres_certificados=[
 
 let indice=[];
 
-for(let i=0; i<3; i++){
+for(let i=0; i<imagenes.length; i++){
     indice[i] = Math.floor(Math.random()*(23));
 }
 
 console.log("los valores son: " +"\n"+indice[0]+"\n"+ indice[1] +"\n"+indice[2]);
 
 
-for (let i=0; i<3; i++) {
+for (let i=0; i<imagenes.length; i++) {
     var valor =document.getElementById(imagenes[i]);
     valor.setAttribute("src", nombres_certificados[indice[i]]);
     
