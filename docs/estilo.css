@@ -113,7 +113,7 @@ body{
 
 /*Header*/
 #header{
-  display: grid;
+  display: none;
   text-align: center;
   grid-template-columns: repeat(3,1fr);
   background-color: var(--cajas);
