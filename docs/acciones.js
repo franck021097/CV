@@ -1,12 +1,7 @@
-/*var anim=document.getElementById("preload").style.display="none";
-
-if(anim.style.opacity<0.5){
-    anim.style.display="none";
-}*/
-
-
-
 function preload(){
+    ocultar();
+    var i= document.getElementById("opciones").style.display="none";
+    i= document.getElementById("preload").style.display="grid";
 setTimeout(
 function(){
     var i= document.getElementById("preload-p");
@@ -37,16 +32,18 @@ function(){
 
 function usuario(){
     var i= document.getElementById("preload").style.display="none";
-    i= document.getElementById("header").style.display="block";
+    i= document.getElementById("opciones").style.display="none";
+    i= document.getElementById("header").style.display="grid";
+    i= document.getElementById("presentacion").style.display="grid";
     i= document.getElementById("main").style.display="block";
     i= document.getElementById("footer").style.display="grid";
-    i= document.getElementById("opciones").style.display="none";
     var im= document.getElementById("flecha").style.display="none";
 }
 
 function ocultar(){
     var i= document.getElementById("preload").style.display="none";
     i= document.getElementById("header").style.display="none";
+    i= document.getElementById("presentacion").style.display="none";
     i= document.getElementById("main").style.display="none";
     i= document.getElementById("footer").style.display="none";
     i= document.getElementById("opciones").style.display="grid";
