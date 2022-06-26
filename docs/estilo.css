@@ -93,10 +93,15 @@ body{
 #opciones{
   background-color: var(--cajas);
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   text-transform: capitalize;
   place-content: center;
-  padding: 5rem 0;
+  /* padding: 40rem 0; */
+}
+
+#opciones ul{
+  margin: 5rem 0;
+  max-height: 90%;
 }
 
 #opciones ul li{
