@@ -138,9 +138,22 @@ body{
 }
 
 /*Presentacion / es el titulo portafolios (h2) mi foto y el nombre*/
+.prueba div:first-child{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+}
 
 .presentacion{
   margin-top: 10rem;
+  position: absolute;
+  top: -0.1rem;
+  left: 0;
+  right: 0;
 }
 
 .presentacion h2{
@@ -152,18 +165,20 @@ body{
     place-content: center;
   }
   
-.presentacion__img{
-  width: auto;
-  padding: 0rem;
-  margin: auto;
-}
-.presentacion__img img{
+  .presentacion__img{
+    width: auto;
+    padding: 0rem;
+    margin: auto;
+  }
+  .presentacion__img img{
   border-radius: 2.4rem;
   width: 100%;
   box-shadow: 0px 7px 5px 2px rgba(0,0,0,0.75);
+  z-index: 20;
 }
 
 figurecaption{
+
   text-align: center;
   display: block;
   font-size: var(--tamanio-titulos-main);
@@ -171,7 +186,20 @@ figurecaption{
   color: var(--titulos);
   text-shadow: 1px 1px 5px var(--sombra-texto);
   }
-  
+
+/*Prueba*/
+
+.prueba{
+  min-height: 70rem;
+  background-image: url(imagenes/Fondo_principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
 /*Main*/
 main{
   display: none;
