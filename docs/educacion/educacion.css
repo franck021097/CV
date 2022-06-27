@@ -1,0 +1,108 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }  
+  
+  :root{
+    /*Todos los colores*/
+       --fondo-de-pagina:  #ecf0f1 ;
+       --sombra-de-cajas: #bceeff;
+       --cajas:  #154360 ;
+       --tarjetas: white;
+       --border-img:#F0F3F4;
+       --border-img-hover:black;
+       /*colores de texto*/
+       --titulos: #030399;
+       --texto:  #00ADB5;
+       --texto-a:  #ecf0f1 
+       --texto-hover: #00ADB5;
+       --sombra-texto: #ffffff;
+   /*tamaños de texto*/
+       --tamanio-titulos-main: 4rem;
+       --tamanio-subTitulos-main: 2rem;
+       --tamanio-p-main: 1.4rem;
+       --tamanio-li: 1.8rem;
+       --tamanio-titulos-footer: 2rem;
+       --tamanio-texto-footer: 1.4rem;
+       --tamanio-footer-derechos: 1.2rem;
+   /*fuente de letra*/
+       --fuente-titulos-main: Sans-serif;
+       --fuente-p-main: Sans-serif;
+       --fuente-ul-main: Sans-serif;
+   }
+  
+  html{
+    font-size: 62.5%;;
+    box-sizing: border-box;
+  }
+  
+  /*Body*/
+  
+  body{
+      background-color: var(--fondo-de-pagina);
+      font-family: 'Krub', sans-serif;
+      font-size: 16px;
+      color: var(--texto);
+      text-shadow: none;
+    }
+
+nav{
+    min-width: 100%;
+    background-color: #030399;
+    display: grid;
+}
+
+nav a{
+    background-color: var(--cajas);
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--texto);
+}
+
+.educacion{
+    background-color: var(--cajas);
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
+    padding: 5rem;
+}
+
+a{
+    color: black;
+    font-size: var(--tamanio-titulos-main);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    .educacion{
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 770px) {
+    .educacion{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+span{
+    display: block;
+    font-size: var(--tamanio-p-main);
+    font-weight: bolder;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    margin: 3rem 0;
+}

@@ -138,15 +138,7 @@ body{
 }
 
 /*Presentacion / es el titulo portafolios (h2) mi foto y el nombre*/
-.prueba div:first-child{
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background-color: black;
-  opacity: 0.8;
-}
+
 
 .presentacion{
   margin-top: 10rem;
@@ -197,6 +189,15 @@ figurecaption{
   position: relative;
 }
 
+.prueba div{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+}
 
 
 
