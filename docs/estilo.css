@@ -46,6 +46,10 @@ html{
 
 body{
     background-color: var(--fondo-de-pagina);
+    /* background-image: url(imagenes/sky.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
     font-family: 'Krub', sans-serif;
     font-size: 16px;
     color: var(--texto);
@@ -91,7 +95,7 @@ body{
 /*Opciones*/
 
 #opciones{
-  background-color: var(--cajas);
+  background-image: url(imagenes/Fondo01.jpeg);
   display: none;
   min-height: 100vh;
   text-transform: capitalize;
@@ -183,9 +187,10 @@ figurecaption{
 
 .prueba{
   min-height: 70rem;
-  background-image: url(imagenes/Fondo_principal.jpg);
+  background-image: url(imagenes/Fondo01.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center auto;
   position: relative;
 }
 

@@ -38,6 +38,7 @@ function usuario(){
     i= document.getElementById("main").style.display="block";
     i= document.getElementById("footer").style.display="grid";
     var im= document.getElementById("flecha").style.display="none";
+    var i= document.getElementById("prueba").style.display="grid";
 }
 
 function ocultar(){
@@ -46,11 +47,14 @@ function ocultar(){
     i= document.getElementById("presentacion").style.display="none";
     i= document.getElementById("main").style.display="none";
     i= document.getElementById("footer").style.display="none";
+    i= document.getElementById("prueba").style.display="none";
     i= document.getElementById("opciones").style.display="grid";
 }
 
 function ver(ver){
 
+var i= document.getElementById("prueba").style.display="grid";
+    
 var secciones=["experiencia", "objetivo","experiencia","interes","educacion","Información_personal","idiomas",
 "aptitudes","proyectos"];
 
