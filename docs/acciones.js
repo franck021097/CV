@@ -19,14 +19,14 @@ setTimeout(
 function(){
     var i= document.getElementById("preload-p");
     i.innerHTML="";
-},8900);
+},9000);
 
 setTimeout(
 function(){
     var im= document.getElementById("flecha");
     im.setAttribute("onclick","usuario()");
     im.setAttribute("src","imagenes/Flecha.png");
-},9000);
+},10000);
 
 }
 

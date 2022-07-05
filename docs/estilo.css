@@ -58,19 +58,27 @@ body{
 
 
 /*Preload*/
+.contenedor__preload{
+  background-color: var(--cajas);
+}
+
 #preload{
   width: 100vw;
   height: 100vh;
   font-size: 2.4rem;
-  color: var(--texto);
-  background-color: var(--cajas);
+  font-weight: 900;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: grid;
   place-content: center;
   z-index: 10;
+  animation: preload 15s 1;
 }
 
 #preload p{
-  animation: preload 3s 4;
+  animation: preload_texto 3s 4;
 }
 
 #flecha{
@@ -80,15 +88,34 @@ body{
   
 }
 
-@keyframes preload{
+@keyframes preload_texto{
   0%{
     opacity: 0;
+    text-shadow: none;
   }
-
-  50%{opacity: 1;
+  
+  50%{
+    opacity: 1;
+    text-shadow: 1rem 0.5rem black;
   }
+  
+  100%{
+    opacity: 0;
+    text-shadow: none;
+  }
+}
 
-  100%{opacity: 0;
+@keyframes preload{
+  0%{
+    background-image: url(imagenes/Fondo01.jpeg);
+  }
+  
+  50%{
+    background-image: url(imagenes/FC.jpg);
+  }
+  
+  100%{
+    background-image: url(imagenes/Slogan1.jpg);
   }
 }
 
