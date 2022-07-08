@@ -10,6 +10,7 @@
     --cajas: #1C1C1A;
     --sombra1: #a9a9a9;
     --sombra2: #1C1C1A;
+    --contenedor-fantasma: transparent;
     /*Colores Textos*/
     --Texto-enfocado: #ffffff;
     --texto-desenfocado: #a9a9a9;
@@ -31,19 +32,31 @@ body{
     font-family: sans-serif;
 }
 
+
+@media (min-width: 700px) {
+    body{
+        background-image: url(imagenes/fondoc1.jpeg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100vh;
+    }
+}
+
+
 /*Header*/
 .header{
     background-color: var(--cajas);
     display: grid;
     place-content: center;
-    height: 10rem;
+    height: 7rem;
     box-shadow: 0 0.2rem 0.9rem var(--sombra1);
     z-index: 50;
     position: relative;
 }
 
 .header__titulo{
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     color: var(--Texto-enfocado);
     text-shadow: 0 0 0.9rem var(--sombra1);
 }
@@ -59,8 +72,9 @@ body{
 .nav__opciones{
     width: 100vw;
     background-color: var(--fondo-principal);
-    height: 11rem;
+    /* height: 2rem; */
     display: none;
+    padding: 1rem 0;
     place-items: center;
     box-shadow: 0 0.2rem 0.9rem var(--sombra2);
     z-index: 4;
@@ -69,6 +83,7 @@ body{
 .nav__opciones a{
     text-decoration: none;
     color: var(--texto-desenfocado);
+    margin: 1rem 0;
 }
 
 .nav__iconoMenu{
@@ -91,13 +106,13 @@ body{
 }
 
 /*Menu dispositivos grandes*/
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .nav__iconoMenu{
         display: none;
     }
 
     .nav__opciones{
-        height: 8rem;
+        height: 5rem;
         display: flex !important;
         flex-direction: row;
         justify-content: end;
@@ -106,7 +121,7 @@ body{
 
     .nav__opciones a{
         margin: 0 2rem;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .nav__opciones a:hover{
@@ -118,32 +133,31 @@ body{
 
 /*Fondo principal inicia con el fondo de mobile*/
 .main{
-    display: grid;
-    place-content: center;
-    background: transparent;
-    margin: 0;
+    background-image: url(imagenes/fondoc1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 3;
-}
-
-.main .main-ajustar{
     text-align: center;
-    font-size: 3.6rem;
-    color: var(--texto-desenfocado);
-    font-weight: 900;
-
+    display: grid;
+    place-content: center;
 }
 
-@media (min-width: 500px) {
-    .main{
-        background-image: url(imagenes/fondoc1.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+.main-ajustar{
+    opacity: 1;
+    color: var(--texto-desenfocado);
+    font-size: 2.4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
 }
 
 
@@ -156,6 +170,46 @@ body{
     content: "Frond-End";
 }
 
+.main__contactar{
+    margin-top: 0rem;
+    opacity: 0;
+    transition: margin 1s, opacity 1s;
+}
+
+.main__contactar-visible{
+    display: none;
+    background-color: red;
+}
+
+/*Animacion para dispositivos mayores*/
+@media (min-width: 700px) {
+    .main-ajustar{
+        transition: margin 4s, opacity 1s;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .main-ajustar p{
+        display: inline-block;
+    }
+
+    /*Contenedor contactar*/
+    .main__contactar-visible{
+        width: 80vw;
+        min-height: 25rem;
+        background-color: var(--contenedor-fantasma);
+        box-shadow: 0 0 0.9rem var(--sombra1);
+        grid-template-columns: repeat(2,1fr);
+        place-content: center;
+    }
+
+    .main__contactar-visible p a{
+        color: var(--texto-desenfocado);
+        font-weight: 900;
+        text-decoration: none;
+    }
+}
 
 /*Footer*/
 .footer{
@@ -169,17 +223,30 @@ body{
 }
 
 .footer__logos{
-    display: none;
-    justify-content: space-around;
-    margin: 2.5rem 15rem;
+    transition: all 1s;
+    height: 0;
 }
 
-@media (min-width: 500px) {
-    .footer__derechos{
-        display: none;
-    }
+.footer__logos-ajustar{
+    transition: all 1s;
+    display: none;
+    grid-template-columns: repeat(2,1fr);  
+    gap: 2rem 1rem;
+}
 
+
+@media (min-width: 700px) {
     .footer__logos{
         display: flex;
-    }    
+        justify-content: space-around;
+        margin: 1rem 15rem;
+    }
+    
+    .footer__derechos{
+        margin-top: -5rem;
+        color: var(--texto-desenfocado);
+        position: absolute;
+        font-style: italic;
+        margin: -5rem 10vw 0 10vw;
+    }
 }
