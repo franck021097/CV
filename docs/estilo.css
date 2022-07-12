@@ -21,7 +21,7 @@
 }
 
 html{
-    font-size: 62.5%;;
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 
@@ -170,7 +170,7 @@ body{
     content: "Frond-End";
 }
 
-.main__contactar{
+.main__section{
     margin-top: 0rem;
     opacity: 0;
     transition: margin 1s, opacity 1s;
@@ -240,6 +240,17 @@ body{
         display: flex;
         justify-content: space-around;
         margin: 1rem 15rem;
+        height: fit-content;
+    }
+
+    .footer__logos-ajustar{
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    .footer__logos-ajustar #github{
+        display: none;
     }
     
     .footer__derechos{

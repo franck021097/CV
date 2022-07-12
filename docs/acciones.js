@@ -24,17 +24,20 @@ function pintarEnfoque(opcion){
 
 
 function limpiarPantalla(){
+    var screenWidth = screen.width;
+    if(screenWidth<700){
     var footerLogos = document.querySelector(".footer__logos");
     var footerLogosAjustar = document.querySelector(".footer__logos-ajustar");
     footerLogosAjustar.style.display ="none";
-   footerLogos.style.height ="0rem";
+    footerLogos.style.height ="0rem";
+    }
 }
 
-function desplazar(){
+function contactar(){
     let i=-40;
     var screenWidth = screen.width;
     if(screenWidth>700){
-        var mainContactar = document.querySelector(".main__contactar");
+        var mainContactar = document.querySelector(".main__section");
         var margenFondo = document.querySelector(".main-ajustar");
         mainContactar.style.marginTop="40rem";
         margenFondo.style.marginTop = i+"rem";
@@ -53,5 +56,17 @@ function desplazar(){
         var footerLogosAjustar = document.querySelector(".footer__logos-ajustar");
         footerLogosAjustar.style.display ="grid";
        footerLogos.style.height ="15rem";
+    }
+}
+
+function curriculum(){
+    var section_main= document.querySelectorAll(".main__section");
+    for (const iterator of section_main) {
+        if(iterator=="curriculum"){
+            iterator.style.display="grid";
+            iterator.style.opacity=1;
+        }else{
+            iterator.style.display="none";
+        }
     }
 }
