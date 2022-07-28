@@ -284,12 +284,17 @@ body{
 
 .proyectos__texto{
     display: none;
-    color: #ffffff;
+    color: var(--Texto-enfocado);
     text-align: justify;
     font-size: 2rem;
     font-weight: 900;
     padding: 0 2rem;
-    text-shadow: 5px 0px 1px #000000;
+    text-shadow: 5px 0px 5px #000000;
+}
+
+.proyectos__texto a{
+    color: var(--Texto-enfocado);
+    text-decoration: none;
 }
 
 /*Boton para cambiar*/

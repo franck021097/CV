@@ -78,7 +78,7 @@ function verInformacionProyectos(){
         let puntoI = document.querySelector('.main__carrousel__informacion svg line').style.stroke= "#000000";
         let cuerpoI = document.querySelector('.main__carrousel__informacion svg polyline').style.stroke= "#000000";
         let proyectoImg = document.querySelector(".proyectos__texto").style.display="block";
-        let bg=document.querySelector('.proyectos__imagen').style.opacity="0.5";
+        let bg=document.querySelector('.proyectos__imagen').style.opacity="0.1";
         verInformacion=false;
     }else{
         let botonCirculo = document.querySelector('.main__carrousel__informacion svg').style.stroke= "#000000";
@@ -94,7 +94,10 @@ function verInformacionProyectos(){
 /*Muestra el siguiente proyecto disponible. Es llamado desde el boton Cambiar en los proyectos. */
 
 var proyectos=["url('imagenes/Freelancer.jpg')", "url('imagenes/FrontEnd - iPad.jpg')", "url('imagenes/Cripto - iPhone X.jpg')"];
-var descripcionDelProyecto=["Pagina Desarrollador freelancer, Francisco Castro. <br>Curso: Udemy. <br>Tecnologias: HTML5, CSS3","Tienda virtual. <br>By: Francisco Castro. <br>Curso: Udemy. <br>Tecnologias: HTML5, CSS3, JS", "Proyecto para ocultar mensajes. <br>Incriptacion: Basica. <br>Tegnologias: HTML5, CSS3, JS"];
+
+var descripcionDelProyecto=["Pagina Desarrollador freelancer, Francisco Castro. <br>Curso: Udemy. <br>Tecnologias: HTML5, CSS3 <br> <a href='freelancer_inicio/freelancer.html' target='_blank'>Ver sitio</a> ","Tienda virtual. <br>By: Francisco Castro. <br>Curso: Udemy. <br>Tecnologias: HTML5, CSS3, JS <br> <a href='FrontEnd_Store/FrontEnd.html' target='_blank'>Ver sitio</a>", "Proyecto para ocultar mensajes. <br>Incriptacion: Basica. <br>Tegnologias: HTML5, CSS3, JS <br> <a href='criptoMensajes/Cripto.html' target='_blank'>Ver sitio</a>"];
+
+
 var indicadorDeProyecto=1;
 function cambiarProyecto(){
     
