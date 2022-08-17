@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Portafolio</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="imagenes/menu1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="estilo.css" as="style">
+
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="acciones.js"></script>
+  </head>
+  <body onload="preload()">
+
+	  <section class="contenedor__preload">
+      <section  id="preload">
+			  <p id="preload-p"></p>
+        <img onclick="usuario()" id="flecha" src="">
+		</section>
+    </section>
+
+		<nav onclick="usuario()" id="opciones">
+			<ul>
+				<li onclick="ver('objetivo')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+            <line x1="9.7" y1="17" x2="14.3" y2="17" />
+          </svg>
+          objetivo</li>
+
+				<li onclick="ver('experiencia')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coffee" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7f5345" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" />
+            <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+            <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+            <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+            <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+          </svg>
+          experiencia</li>
+
+				<li onclick="ver('interes')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="2" y="6" width="20" height="12" rx="2" />
+            <path d="M6 12h4m-2 -2v4" />
+            <line x1="15" y1="11" x2="15" y2="11.01" />
+            <line x1="18" y1="13" x2="18" y2="13.01" />
+          </svg>
+          interes</li>
+
+				<li onclick="ver('educacion')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="15" cy="15" r="3" />
+            <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
+            <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
+            <line x1="6" y1="9" x2="18" y2="9" />
+            <line x1="6" y1="12" x2="9" y2="12" />
+            <line x1="6" y1="15" x2="8" y2="15" />
+          </svg>
+          educacion</li>
+
+				<li onclick="ver('Información_personal')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-check" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+            <rect x="9" y="3" width="6" height="4" rx="2" />
+            <path d="M9 14l2 2l4 -4" />
+          </svg>
+          Información personal</li>
+
+				<li onclick="ver('idiomas')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-friends" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="7" cy="5" r="2" />
+            <path d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" />
+            <circle cx="17" cy="5" r="2" />
+            <path d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4" />
+          </svg>
+          idiomas</li>
+
+				<li onclick="ver('aptitudes')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-like" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="3" y="16" width="3" height="5" rx="1" />
+            <path d="M6 20a1 1 0 0 0 1 1h3.756a1 1 0 0 0 .958 -.713l1.2 -3c.09 -.303 .133 -.63 -.056 -.884c-.188 -.254 -.542 -.403 -.858 -.403h-2v-2.467a1.1 1.1 0 0 0 -2.015 -.61l-1.985 3.077v4z" />
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M5 12.1v-7.1a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-2.3" />
+          </svg>
+          aptitudes</li>
+
+				<li onclick="ver('proyectos')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+            <path d="M10 13l-1 2l1 2" />
+            <path d="M14 13l1 2l-1 2" />
+          </svg>
+          proyectos</li>
+
+			</ul>
+		</nav>
+
+    <header>
+      <section id="header">
+        <h1>francisco castro</h1>
+        <div class="header__menu" onclick="ocultar()">
+            <svg id="header__iconoMenu" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="52" height="52" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </div>
+      </section>
+    </header>
+
+
+    <section class="prueba" id="prueba">
+      <div>        
+      </div>
+    </section>
+
+    <section id="presentacion" class="presentacion">
+      <h2>Portafolio</h2>
+      <figure class="presentacion__img">
+        <img src="imagenes/Chaleco.jpg" alt="foto FC" title="selfie"/>
+        <br>
+        <figurecaption>Francisco Castro</figurecaption>
+      </figure>
+    </section>
+
+
+    <main id="main" class="main">
+      <section class="main__section" id="objetivo">
+        <setion class="main__titulo">
+          <h2>Objetivo</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+              <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+              <line x1="9.7" y1="17" x2="14.3" y2="17" />
+            </svg>
+          </section>
+        </setion>
+        <p>
+          Formar parte de una empresa en la que pueda poner en práctica todos
+          mis conocimientos y experiencias en las distintas áreas. Desarrollarme
+          profesionalmente para el buen desempeño de las funciones asignadas,
+          que me brinden la oportunidad de alcanzar todas mis metas trazadas y
+          que me ofrezcan la oportunidad de crecer en el área laboral, personal
+          e intelectual.
+        </p>
+      </section>
+
+      <section class="main__section" id="experiencia">
+        <section class="main__titulo">
+          <h2>experiencia</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coffee" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7f5345" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" />
+              <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+              <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+              <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+              <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+            </svg>
+          </section>
+        </section>
+
+        <div>
+          <h3>Formales</h3>
+          <p>2018 (2 meses) Banco Azteca (Outsourcing) Asesor telefónico en cobranza.</p>
+          <p>14/10/2019 – 03/01/2022 Grupo Sanborns (SEARS).</p>
+          <ul>
+            <li>Analista de crédito</li>
+            <li>Asesor telefónico en servicio al cliente</li>
+            <li>Operador en trámites de crédito</li>
+            <li>Ayudante general en investigación y resolución de trámites</li>
+            <li>Encargado en manejo de recursos y reportes a sucursales</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Informales</h3>
+          <p>2017 -A la fecha Negocio propio Servicio técnico en mantenimiento y reparación de computadoras y celulares.</p>
+        </div>
+
+      </section>
+
+      <section class="main__section" id="interes">
+        <section class="main__titulo">
+          <h2>intereses</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="2" y="6" width="20" height="12" rx="2" />
+              <path d="M6 12h4m-2 -2v4" />
+              <line x1="15" y1="11" x2="15" y2="11.01" />
+              <line x1="18" y1="13" x2="18" y2="13.01" />
+            </svg>
+          </section>
+        </section>
+        <p>
+          Me gusta leer, pero, lo hago poco por tiempo, de 1 a 2 libros por año,
+          ocupo mi tiempo libre en aprender una nueva habilidad en programación
+          y mejorar lo ya aprendido, me gusta generar negocios estables para
+          incrementar mis ingresos y calidad de vida, escucho música y paseo con
+          mi familia.
+        </p>
+      </section>
+
+      <!--aqui va la educacion-->
+	  <section class="main__section" id="educacion">
+      <section class="main__titulo">
+        <h2>Educación</h2>
+        <section class="main__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="15" cy="15" r="3" />
+            <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
+            <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
+            <line x1="6" y1="9" x2="18" y2="9" />
+            <line x1="6" y1="12" x2="9" y2="12" />
+            <line x1="6" y1="15" x2="8" y2="15" />
+          </svg>
+        </section>
+      </section>
+		  <div  class="cursos-terminados">
+			  <div class="flip-card">
+				  <div class="flip-card-inner">
+					  <div class="flip-card-front">
+						  <img  id="1" class="ipnPC" src="imagenes/##.png" alt="certificado" />
+						</div>
+						<div class="flip-card-back">
+							<span class="flip-card-front">...
+								<a class="1" href="imagenes/##.png" target="_blank">ver</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img  id="2" class="ipnPC" src="imagenes/##.png" alt="certificado" />
+						  </div>
+						  <div class="flip-card-back">
+							  <span class="flip-card-front">...
+								  <a href="imagenes/##.png" target="_blank">ver</a>
+							  </span>
+						  </div>
+					  </div>
+				  </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img  id="3" class="ipnPC" src="imagenes/##.png" alt="certificado" />
+                </div>
+                <div class="flip-card-back">
+                  <span class="flip-card-front">...
+                    <a href="imagenes/##.png" target="_blank">ver</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          <div class="flip-card flip-card-grande">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img  id="4" class="ipnPC" src="imagenes/##.png" alt="certificado" />
+                </div>
+                <div class="flip-card-back">
+                  <span class="flip-card-front">...
+                    <a href="imagenes/##.png" target="_blank">ver</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          <div class="flip-card flip-card-grande">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img  id="5" class="ipnPC" src="imagenes/##.png" alt="certificado" />
+                </div>
+                <div class="flip-card-back">
+                  <span class="flip-card-front">...
+                    <a href="imagenes/##.png" target="_blank">ver</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-mas">
+              <p><a href="educacion/educacion.html">+23</a></p>
+              </div>
+            </div>
+          </div>
+          </div>
+			  <div>
+			  </div>
+
+	  </section>
+
+      <section class="main__section" id="Información_personal">
+        <section class="main__titulo">
+          <h2>Información personal</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-check" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+              <rect x="9" y="3" width="6" height="4" rx="2" />
+              <path d="M9 14l2 2l4 -4" />
+            </svg>
+          </section>
+        </section>
+        <ul>
+          <li>Género y estado civil: Hombre, soltero.</li>
+          <li>Edad y fecha de nacimiento: 24 años, 02 de octubre del 1997.</li>
+          <li>Nacionalidad: Mexicano</li>
+        </ul>
+      </section>
+
+      <section class="main__section" id="idiomas">
+        <section class="main__titulo">
+          <h2>idiomas</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-friends" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="7" cy="5" r="2" />
+              <path d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" />
+              <circle cx="17" cy="5" r="2" />
+              <path d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4" />
+            </svg>  
+          </section>
+        </section>
+        <p>Inglés: intermedio.</p>
+        <p>Portugués: básico.</p>
+      </section>
+
+      <section class="main__section" id="aptitudes">
+        <section class="main__titulo">
+          <h2>aptitudes</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-like" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="3" y="16" width="3" height="5" rx="1" />
+              <path d="M6 20a1 1 0 0 0 1 1h3.756a1 1 0 0 0 .958 -.713l1.2 -3c.09 -.303 .133 -.63 -.056 -.884c-.188 -.254 -.542 -.403 -.858 -.403h-2v-2.467a1.1 1.1 0 0 0 -2.015 -.61l-1.985 3.077v4z" />
+              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+              <path d="M5 12.1v-7.1a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-2.3" />
+            </svg>  
+          </section>
+        </section>
+        <ul>
+          <li>Calidad.</li>
+          <li>Gestión de proyectos.</li>
+          <li>Excelente comunicación interpersonal.</li>
+          <li>Capacidad de desarrollar varias tareas a la vez de forma eficiente.</li>
+          <li>Desarrollo personal.</li>
+          <li>Persona organizada.</li>
+          <li>Actitud de servicio al cliente</li>
+          <li>Logro constante de objetivos</li>
+        </ul>
+      </section>
+
+      <section class="main__section" id="proyectos">
+        <section class="main__titulo">
+          <h2>proyectos</h2>
+          <section class="main__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+              <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+              <path d="M10 13l-1 2l1 2" />
+              <path d="M14 13l1 2l-1 2" />
+            </svg>
+          </section>
+        </section>
+        <ul>
+          <li><a href="criptoMensajes/Cripto.html" target="_blank">Cripto-mensajes</a></li>
+          <li><a href="freelancer_inicio/freelancer.html" target="_blank">Freelancer</a></li>
+          <li><a href="FrontEnd_Store/FrontEnd.html" target="_blank">Frontend</a></li>
+          <li><a href="QR/QR.html" target="_blank" >Codigo</a></li>
+          <li><a href="blogCafe/blogCafe.html" target="_blank" >Blog cafe</a></li>
+        </ul>
+      </section>
+
+    </main>
+    
+    <footer id="footer">
+      <section class="footer__datos">
+        <h3 id="contacto">Contacto</h3>
+        <ul class="footer__datos__lista footer__contacto">
+          <li><a href="https://wa.me/qr/FYA4WNHWAHPFF1">Whatsapp:</a></li>
+          <li>Llamar: 5610663821</li>
+          <li><a href="https://github.com/franck021097?tab=repositories">Repositorio</a></li>
+          <li>Correo: franck_021097@hotmail.com</li>
+        </ul>
+        <h3 id="repositorio">repositorios</h3>
+        <ul class="footer__datos__lista footer__links">
+          <li><a href="https://github.com/franck021097/proyectoEsimePK">Juego ESIME</a></li>
+          <li><a href="/Cripto_mensajes/index.html">Cripto-mensajes</a></li>
+          <!-- <li><a href="https://github.com/franck021097/memorama">Memorama</a></li> -->
+          <!-- <li><a href="https://github.com/franck021097/OC_DANCE_Center">Escuela de baile</a></li> -->
+        </ul>
+      </section>
+
+      <section class="tecnologias">
+        <h3>Tecnologias</h3>
+        <div class="tecnologias__lista">
+          <img class="img-tecnologias" src="imagenes/html-5-logo.png" alt="logo de html5">
+          <p>HTML5</p>
+          <img class="img-tecnologias" src="imagenes/css-3.png" alt="logo de css">
+          <p>CSS3</p>
+          <img class="img-tecnologias" src="imagenes/js.png" alt="logo de JS">
+          <p>Javascript</p>
+          <img class="img-tecnologias" src="imagenes/letter-c.png" alt="logo de C">
+          <p>C</p>
+          <img class="img-tecnologias" src="imagenes/responsive-design.png" alt="logo de html5">
+          <p>Responsive web design</p>
+          <img class="img-tecnologias" src="imagenes/c-.png" alt="logo de html5">
+          <p>C++</p>
+        </div>
+      </section>
+
+      <section class="referencias">
+        <h3>referencias</h3>
+        <a href="https://www.flaticon.es/iconos-gratis/menu" title="menú iconos">icon menu</a>
+      </section>
+
+      <section class="footer__derechos">
+        <span>Versión: constantemente actualizando...</span><br />
+        <span>Todos los derechos reservados © </span>
+      </section>
+
+    </footer>
+
+  </body>
+</html>

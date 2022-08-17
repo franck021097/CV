@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 4rem;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+p{
+    margin: 5rem 0;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#home{
+    display: inline-block;
+    border-radius: 100%;
+    background: linear-gradient(to right, #85C1E9 , black,#85C1E9 );
+    animation: quieto 5s infinite;
+    
+}
+
+#home p{
+    background-color: #34495E;
+    border-radius: 100%;
+    padding: 5rem;
+    margin: 1rem;
+    animation: giro 5s infinite;
+}
+
+@keyframes giro{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes quieto{
+    from{
+        transform: rotate(359deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}

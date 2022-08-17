@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cripto mensajes</title>
+    <meta lang="es">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Cripto.css'>
+    <script src='Cripto.js'></script>
+</head>
+<body>
+    <header>
+        <h1 id="header__h1">Cripto mensajes</h1>
+    </header>
+    <main>
+        <section class="main__inputs">
+            <span>
+                <input id="frase corta" type="radio" name="entrada">
+                <label for="frase corta">Frase corta</label>
+            </span>
+            <span>
+                <input id="texto" type="radio" name="entrada">
+                <label for="texto">Texto</label>
+            </span>
+        </section>
+        <section class="main__input">
+                <input id="Entrada" type="text" placeholder="Ingresa la frase">
+                <span id="logo"></span>
+        </section>
+        <section class="main__buttons">
+            <button onclick="Incriptar()">Encriptar</button>
+            <button onclick="Desincriptar()">Desencriptar</button>
+        </section>
+        <section>
+	        <p id="final">Mensaje final</p>
+        </section>
+    </main>
+    <footer>
+        <span class="footer__logo">
+            <p>FC</p>
+        </span>
+        <span class="footer__creador">
+            <p>Desarrollador y programador: 
+            Francisco Javier Castro Alcantar</p>
+        </span>
+        <span class="footer__version">
+            <p>version 1.0</p>
+        </span>
+    </footer>
+</body>
+</html>

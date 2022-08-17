@@ -1,0 +1,32 @@
+{
+  "name": "franck021097.github.io",
+  "version": "1.0.0",
+  "description": "proyecto con Gulp, SASS y HTML",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franck021097/franck021097.github.io.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Francisco Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franck021097/franck021097.github.io/issues"
+  },
+
+  "dependencies": {
+    "sass": "^1.53.0"
+  },
+
+  "homepage": "https://github.com/franck021097/franck021097.github.io#readme"
+
+}

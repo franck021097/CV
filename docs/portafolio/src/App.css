@@ -1,0 +1,33 @@
+/*Globales*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  /*Colores fondos*/
+  --fondo-principal: #262626;
+  --cajas: #1C1C1A;
+  --sombra1: #a9a9a9;
+  --sombra2: #1C1C1A;
+  --contenedor-fantasma: transparent;
+  /*Colores Textos*/
+  --Texto-enfocado: #ffffff;
+  --texto-desenfocado: #a9a9a9;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/*Body*/
+body{
+  background-color: var(--fondo-principal);
+  font-size: 16px;
+  font-family: sans-serif;
+}
