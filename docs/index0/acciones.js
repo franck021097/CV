@@ -38,7 +38,7 @@ setTimeout(
 function(){
     var im= document.getElementById("flecha");
     im.setAttribute("onclick","usuario()");
-    im.setAttribute("src","imagenes/Flecha.png");
+    im.setAttribute("src","../imagenes/Flecha.png");
 },12000);
 
 }
@@ -74,7 +74,7 @@ var secciones=["experiencia", "objetivo","experiencia","interes","educacion","In
 var imagenes=["1","2","3","4","5"];
 
 var nombres_certificados=[
-    "imagenes/ipnFPC.jpeg","imagenes/cvCarso.png","imagenes/rCelTab.png","imagenes/fpMiriada.png","imagenes/ipMiX.png","imagenes/pbPlatzi.png","imagenes/ccbPlatzi.png","imagenes/cfeyePlatzi.png","imagenes/cdhtml-cssPlatzi.png","imagenes/cphtml-cssPlatzi.png","imagenes/cssiPlatzi.png","imagenes/cetebPlatzi.png","imagenes/tipPlatzi.png","imagenes/cipPlatzi.png","imagenes/ciba1psPlatzi.png","imagenes/cpreworkPlatzi.png","imagenes/crdmfPlatzi.png","imagenes/cssSL.jpg","imagenes/htmlSL.jpg","imagenes/jsSL.jpg","imagenes/c++SL.jpg","imagenes/sqlSL.jpg","imagenes/excel.jpg","imagenes/word.png"];
+    "ipnFPC.jpeg","cvCarso.png","rCelTab.png","fpMiriada.png","ipMiX.png","pbPlatzi.png","ccbPlatzi.png","cfeyePlatzi.png","cdhtml-cssPlatzi.png","cphtml-cssPlatzi.png","cssiPlatzi.png","cetebPlatzi.png","tipPlatzi.png","cipPlatzi.png","ciba1psPlatzi.png","cpreworkPlatzi.png","crdmfPlatzi.png","cssSL.jpg","htmlSL.jpg","jsSL.jpg","c++SL.jpg","sqlSL.jpg","excel.jpg","word.png"];
 
 
 let indice=[];
@@ -88,7 +88,7 @@ console.log("los valores son: " +"\n"+indice[0]+"\n"+ indice[1] +"\n"+indice[2])
 
 for (let i=0; i<imagenes.length; i++) {
     var valor =document.getElementById(imagenes[i]);
-    valor.setAttribute("src", nombres_certificados[indice[i]]);
+    valor.setAttribute("src", "../imagenes/certificados/" + nombres_certificados[indice[i]]);
     
 }
 
