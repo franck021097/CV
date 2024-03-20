@@ -1,3 +1,4 @@
+
 function encriptar() {
   let entrada = document.getElementById("entrada");
   let mensajeOculto = "";
@@ -11,6 +12,7 @@ function encriptar() {
         i=entrada.value.length;
         let avanzar = caracteresPermitidos(entrada.value);
         if(avanzar) {
+          
           contador=0;
           while (contador < entrada.value.length) {
             mensajeOculto +=
@@ -38,8 +40,26 @@ function encriptar() {
     
             contador++;
           }
+
+          if(screen.width > 1439){
+            let rectangulo = document.getElementsByClassName("textos");
+          rectangulo[0].style.display = "initial";
+          }
+          
+
+
+          let imgtextos = document.getElementById("img-texto");
+          imgtextos.style.display = "none";
+
+          salida.style.fontSize ="24px";
+          salida.style.lineHeight ="36px";
+
           titulo.innerHTML = "Tu mensaje oculto es:";
           salida.innerHTML = mensajeOculto;
+
+          let buttonCopiar = document.getElementById("copiar");
+
+          buttonCopiar.style.display = "inline";
         } else {
           alert("Solo letras minúsculas y sin acentos");
           break;
@@ -69,8 +89,73 @@ function caracteresPermitidos(mensaje) {
   return 1;
 }
 
-function desencriptar() {
-  let mensajeOriginal;
+
+function desencriptar(){
+  let entrada = document.getElementById("entrada").value;
+  let contador = 0;
+  let llave = {"a": "ai", "e":"enter", "i":"imes", "o": "ober", "u": "ufat"};
+  let mensajeFinal = "";
+
+  while(entrada.length > contador){
+    
+    let claveEncontrada = false;
+    for(let clave in llave){
+      if(entrada[contador]== clave){
+        let compararClave = "";
+        let contadorClave = contador;
+        
+        for(let i in llave[clave]){
+          compararClave += entrada[contadorClave];
+          contadorClave++;
+        }
+
+        if(compararClave == llave[clave]){
+          mensajeFinal += clave;
+          
+          contador = contadorClave-1;
+          claveEncontrada = true;
+          break;
+        }
+      }else{
+        claveEncontrada = false;
+        continue;
+      }
+    }
+
+    if(!claveEncontrada){
+      mensajeFinal += entrada[contador];
+    }
+    contador++;
+  }
+
+  if(screen.width > 1439){
+    let rectangulo = document.getElementsByClassName("textos");
+    rectangulo[0].style.display = "initial";
+  }
+
+  let titulo = document.getElementById("titulo");
+  let salida = document.getElementById("salida");
+  let imgtextos = document.getElementById("img-texto");
+  let buttonCopiar = document.getElementById("copiar");
+
+  imgtextos.style.display = "none";
+  buttonCopiar.style.display = "inline";
+
+  salida.style.fontSize ="24px";
+  salida.style.lineHeight ="36px";
+
+
   titulo.innerHTML = "Tu mensaje original es:";
-  salida.innerHTML = mensajeOriginal;
+  salida.innerHTML = mensajeFinal;
 }
+
+
+function copiar(){
+  let texto = document.getElementById("salida").textContent;
+  if(navigator.clipboard.writeText(texto)){
+    let botonCopiar = document.getElementById("copiar");
+    botonCopiar.innerHTML = "Texto copiado";
+  }
+}
+
+
