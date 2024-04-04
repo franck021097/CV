@@ -155,6 +155,7 @@ function copiar(){
   if(navigator.clipboard.writeText(texto)){
     let botonCopiar = document.getElementById("copiar");
     botonCopiar.innerHTML = "Texto copiado";
+    // botonCopiar.style.backgroundColor = "#00ff50";
   }
 }
 

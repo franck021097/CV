@@ -165,6 +165,17 @@ main {
     overflow: scroll;
   }
 
+  #copiar{
+    background-color: transparent;
+    transition: 1s background-color, 10s font-size, 1s color;
+  }
+
+  #copiar:active{
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.1s all;
+  }
 
   
 }
