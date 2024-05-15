@@ -1,16 +1,22 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-azul-de-fundo: #e9f2fd;
    --cor-de-link: #000;
    --cor-de-texto: #464646;
+   --cor-azul-intenso: #2A7AE4;
+}
+
+.skills__img img{
+    height: 33px;
+}
+
+.menu__header--img-darkmode{
+    background-color: #000000a3;
+    border-radius: 100%;
+}
+
+.menu__header--img-lightmode{
+    display: none;
 }
 
 body {
@@ -36,22 +42,10 @@ a{
     color: var(--cor-de-link);
 }
 
-.experience img, .formcontato img{
-    /* display: none; */
-    max-width: 100%;
+.formcontato__img{
+    display: none;
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 section{
     padding: 0 16px;
@@ -61,19 +55,35 @@ section{
 
 section.menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 16px 0;
+    font-weight: 700;
+}
+
+section.menu a{
+    color: var(--cor-de-texto);
 }
 
 .menu__header{
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .menu__list{
     display: none;
 }
+
+#email-adress{
+    display: none;
+}
+
+#email-logo{
+    display: inline;
+}
+
 
 /*Sección Title*/
 
@@ -87,6 +97,7 @@ section.title{
     width: 98px;
     height: 98px;
     margin-bottom: 16px;
+    border-radius: 100%;
 }
 
 .title__container{
@@ -102,8 +113,13 @@ section.title{
     text-align: center;
 }
 
+.skills__title, .hobbies__title{
+    padding-top: 16px;
+}
+
 .title__network{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -123,8 +139,12 @@ section.about, section.academic, section.formcontato{
 
 }
 
-.about__container, #skills, #hobbies{
+.about__container{
     padding: 16px 0;
+}
+
+#skills, #hobbies{
+    margin: 16px 0;
 }
 
 /*Sección Hobbies*/
@@ -132,56 +152,257 @@ section.about, section.academic, section.formcontato{
 .skills__line, .hobbies__line{
     display: flex;
     flex-wrap: wrap;
+    gap: 32px 16px;
+    justify-content: center;
 }
 
 .skills__box, .hobbies__box{
     background-color: #fff;
+    width: 156px;
+    height: 118px;
 }
 
 .skills__box ul, .hobbies__box ul{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 156px;
-    height: 118px;
-}
-
-section.hobbies{
-    
+    height: calc(100% - 16px);
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 16px 16px;
 }
 
 /* Experiencia Académica*/
 
-section.academic{
+section.academic, section.experience, section.formcontato{
+    padding: 32px;
 
+}
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.academic__courses__item__img, .experience__img{
+    width: 100%;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 118px;
+    background-color: #fff;
+}
+
+.academic__courses__item__img img{
+    width: 84px;
+}
+
+.academic__courses__item__title, .experience__title, .formcontato__subtext{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.academic__courses__item__subtitle, .experience__text, .formcontato__subtext{
+    font-weight: 300;
 }
 
 /* experiencia*/
 
-section.experience{
 
+.container__experience__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    gap: 64px;
+
+}
+
+.experience__info{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience__repo, .experience__demo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--cor-azul-intenso);
+}
+
+.experience__repo{
+    width: 108px;
+}
+
+.experience__repo a{
+    color: var(--cor-azul-intenso);
+}
+
+.experience__demo{
+    width: 96px;
+    background-color: var(--cor-azul-intenso);
+}
+
+.experience__demo a{
+    color: #fff;
 }
 
 /*Contacto*/
 
-section.formcontato{
+.formcontato__title{
+    margin-bottom: 8px;
+}
 
+.formcontato__form{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.formcontato__input, .formcontato__textarea, .container__input-focus label{
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.container__input-focus{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 4px;
+    height: 56px;
+    width: 100%;
+}
+
+.container__input-focus label{
+    margin-top: 8px;
+}
+
+.container__input-focus .formcontato__input{
+    padding-bottom: 8px;
+    border-radius: 4px;
+}
+
+.container__input-focus label, input::placeholder, textarea::placeholder{
+    color: #A2A2A2;
+}
+
+.formcontato__form input:nth-child(3){
+    height: 56px;
+    padding: 16px 12px;
+}
+
+.formcontato__textarea{
+    padding-top: 16px;
+    resize: none;
+    height: 133px;
+}
+
+.container__input-focus, .formcontato__form input:nth-child(3), .formcontato__textarea{
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #C8C8C8;
+}
+
+
+.formcontato__form input:focus, .formcontato__textarea:focus{
+    box-shadow: 0 1px 0 var(--cor-azul-intenso);
+    outline: none;
+}
+
+input:focus + label{
+    color: var(--cor-azul-intenso);
+}
+
+.formcontato__botao{
+    background-color: var(--cor-azul-intenso);
+    color: #fff;
+    padding: 12px 16px;
+    font-weight: 600;
+    width: 133px;
+    height: 40px;
 }
 
 /*footeer*/
 
 section.footer{
-   
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: center;
+    height: 102px;
 }
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
+.footer__rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 
 
 /*Tablet*/
 @media (min-width: 768px) {
-
 /* Menú */
+
+#email-adress{
+    display: inline;
+}
+
+#email-logo{
+    display: none;
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+}
+
+.title__bio, .title__subsection{
+    text-align: left;
+}
+
+.skills__box, .hobbies__box{
+    width: 100%;
+    max-width: 224px;
+}
+
+.academic__courses{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.academic__courses__box{
+    width: 100%;
+    width: 224px;
+}
+
+.experience__img{
+    width: 704px;
+}
+
+
 
 /*title*/
 
@@ -193,27 +414,42 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Experiencia Profesional*/
 
+.formcontato__contacto{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
 }
+
+
+/* Computadoras */
+@media (min-width: 1440px) {
+    body{
+        font-size: 16px;
+    }
+
+    .menu__list{
+        display: inline-flex;
+        gap: 32px;
+    }
+
+    .menu__list__item__contato{
+        display: none;
+    }
+
+    .experience__box {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .experience__box:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+
+    .formcontato__img{
+        display: inline;
+    }
+}
+
