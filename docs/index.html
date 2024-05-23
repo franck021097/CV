@@ -22,7 +22,7 @@
                 <!-- <img class="menu__header--img-darkmode" src="assets/moon.svg"> -->
                 <!-- <img class="menu__header--img-lightmode" src="assets/brightness-down.svg"> -->
                 <img class="menu__header--img" src="assets\Group.svg">
-                <h3 class="menu__title">Francisco </h3>
+                <h3 class="menu__title"></h3>
             </header>
             <nav>
                 <ul class="menu__list">
@@ -31,7 +31,7 @@
                     <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                     <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                     <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
+                    <li class="menu__list__item"><a href="mailto:franck_021097@hotmail.com">franck_021097@hotmail.com</a></li>
                 </ul>
                 <li class="menu__list__item__contato">
                     <a href="mailto:franck_021097@hotmail.com">
@@ -48,7 +48,7 @@
                 <img class="title__profile" src="assets\profile.jpeg">
                 <div class="title__container">
                     <h2 class="title__bio">Hola, mi nombre es Francisco Castro y soy desarrollador Front end</h2>
-                    <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+                    <h3 class="title__subsection">Soy formado en el mundo e internet, y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
                         <li class="title__network__item">
@@ -60,7 +60,7 @@
                         <li class="title__network__item">
                             <a href="./documentos/Francisco_Castro_cv24.pdf" download>Currículo <img src="assets\arrow.svg"></a>
                         </li>
-                        <li class="title__network__item">
+                        <li style="display: none;" class="title__network__item">
                             <a href="resumen/index.html">Resumen <img src="assets\arrow.svg"></a>
                         </li>
                     </ul>
@@ -73,9 +73,9 @@
             <div class="about__container">
                 <h3 class="about__title">Sobre mi</h3>
                 <br>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
+                <p class="about__paragraph">Me encuentro en mis grandiosos 20's, disfruto desvelarme aprendiendo cosas nuevas, llorar con uno que otro libro. No soy amante de caerme al patinar, pero sí de esa sensación que viene después de lograr aprender algo nuevo.</p>
                 <br>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                <p class="about__paragraph">Podría decir que me dedico a programar, pero, más bien, me dedico a resolver esos problemas que no todos quieren resolver.</p>
                 <br>
                 <!-- Si quieres, pon tú firma acá! -->
                 <!-- <img src="assets\signature.png"> -->
@@ -222,7 +222,7 @@
 
         <!-- Sección de Experiencia Profesional/Proyectos-->
         <section class="experience" id="xp">
-            <h2 class="experience__section__title" >Experiencia Profissional</h2>
+            <h2 class="experience__section__title" >Experiencia Profesional</h2>
 
             <div class="container__experience__box">
                 <div class="experience__box">
@@ -308,7 +308,12 @@
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    <br>
+                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</h3>
+                    <br>
+                    <p class="formcontato__subtext"><strong id="nota">Nota:</strong> puede ser que el formulario aún no esté funcionando. En ese caso, considere el correo que aparece al inicio de esta página o descargue el CV, donde encontrará mis medios de contacto. Espero que pronto podamos conocernos.</p>
+                    <br>
+                    <p class="formcontato__subtext">Atentamente,<br>El Dev.</p>
                     <form class="formcontato__form" name="form">
                         <div class="container__input-focus">
                             <input id="nombre" class="formcontato__input" type="text" name="nombre">
@@ -320,8 +325,10 @@
                         </div>
                         <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        
                     </form>
+                    <!-- Se encuentra fuera del form para evitar que recargue la pagina, esto mientas se arregla el formulario. Saludos -->
+                    <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                 </div>
             </div>
         </section>
@@ -329,8 +336,8 @@
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
-                <p>Desarrollado por Fulana de Tal</p>
-                <p>2022</p>
+                <p>Desarrollado por Francisco C.</p>
+                <p>2024</p>
             </div>
         </section>
     </div>

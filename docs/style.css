@@ -72,6 +72,10 @@ section.menu a{
     gap: 12px;
 }
 
+.menu__title::after{
+    content: "Francisco C";
+}
+
 .menu__list{
     display: none;
 }
@@ -273,6 +277,7 @@ section.academic, section.experience, section.formcontato{
 
 .formcontato__form{
     margin-top: 32px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -365,6 +370,10 @@ section.footer{
 @media (min-width: 768px) {
 /* Menú */
 
+.menu__title::after{
+    content: "Francisco Castro";
+}
+
 #email-adress{
     display: inline;
 }
@@ -376,6 +385,7 @@ section.footer{
 .title__div{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
     gap: 32px;
 }
 
@@ -420,6 +430,12 @@ section.footer{
     gap: 32px;
 }
 
+.formcontato__botao{
+    font-weight:  400;
+    width: 144px;
+    height: 51px;
+}
+
 }
 
 
@@ -453,3 +469,8 @@ section.footer{
     }
 }
 
+
+.nota_activa{
+    color: red;
+    font-weight: 700;
+}
