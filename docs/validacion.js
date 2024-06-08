@@ -1,3 +1,5 @@
+location.replace("https://franck021097-github-io.vercel.app/");
+
 const submit = document.querySelector(".formcontato__botao");
 const nota = document.querySelector(".nota");
 const nota_titulo = document.querySelector("#nota");
@@ -11,7 +13,7 @@ submit.addEventListener('click', (evento)=>{
 
 async function obtenerRegistro(evento){
 
-    evento.preventDefault();
+    // evento.preventDefault();
     const nombre = document.querySelector("#nombre").value;
     const email = document.querySelector("#email").value;
     const asunto = document.querySelector("#asunto").value;
