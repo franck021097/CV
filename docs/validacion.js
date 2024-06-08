@@ -1,4 +1,4 @@
-location.replace("https://franck021097-github-io.vercel.app/");
+if(window.location.href == "https://franck021097.github.io/"){location.replace("https://franck021097-github-io.vercel.app/");}
 
 const submit = document.querySelector(".formcontato__botao");
 const nota = document.querySelector(".nota");
@@ -23,9 +23,9 @@ async function obtenerRegistro(evento){
 
     try{
         const respuesta = await enviarFormulario(nombre,email,asunto,mensaje,fecha);
+        nota.style.display = "block";
 
         if(!respuesta.ok){
-            nota.style.display = "block";
             console.log(respuesta.ok)
             throw e;
         }
