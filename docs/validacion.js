@@ -20,18 +20,20 @@ async function obtenerRegistro(evento){
     const mensaje = document.querySelector("#mensaje").value;
 
     const fecha = new Date();
-
-    try{
-        const respuesta = await enviarFormulario(nombre,email,asunto,mensaje,fecha);
-        nota.style.display = "block";
-
-        if(!respuesta.ok){
-            console.log(respuesta.ok)
-            throw e;
+    if(mensaje.length > 3){
+        try{
+            const respuesta = await enviarFormulario(nombre,email,asunto,mensaje,fecha);
+            nota.style.display = "block";
+    
+            if(!respuesta.ok){
+                console.log(respuesta.ok)
+                throw e;
+            }
+        }catch(e){
+            console.log(e);
         }
-    }catch(e){
-        console.log(e);
     }
+    
 
     
 }
