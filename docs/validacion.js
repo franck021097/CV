@@ -1,8 +1,10 @@
 const submit = document.querySelector(".formcontato__botao");
+const nota = document.querySelector(".nota");
+const nota_titulo = document.querySelector("#nota");
 
 submit.addEventListener('click', (evento)=>{
     
-    nota.classList.add("nota_activa");
+    nota_titulo.classList.add("nota_activa");
     obtenerRegistro(evento);
 })
 
@@ -20,7 +22,11 @@ async function obtenerRegistro(evento){
     try{
         const respuesta = await enviarFormulario(nombre,email,asunto,mensaje,fecha);
 
-        if(respuesta.ok) console.log(respuesta.ok)
+        if(!respuesta.ok){
+            nota.style.display = "block";
+            console.log(respuesta.ok)
+            throw e;
+        }
     }catch(e){
         console.log(e);
     }

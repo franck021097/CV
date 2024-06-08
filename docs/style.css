@@ -225,6 +225,10 @@ section.academic, section.experience, section.formcontato{
     font-weight: 300;
 }
 
+.nota{
+    display: none;
+}
+
 /* experiencia*/
 
 
