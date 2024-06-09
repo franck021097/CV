@@ -137,6 +137,9 @@ section.title{
 }
 
 /*Sección About*/
+.bold{
+    font-weight: 700;
+}
 
 section.about, section.academic, section.formcontato{
     background-color: var(--cor-azul-de-fundo);
@@ -275,6 +278,13 @@ section.academic, section.experience, section.formcontato{
 
 /*Contacto*/
 
+
+.formcontato__contacto{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
 .formcontato__title{
     margin-bottom: 8px;
 }
@@ -322,10 +332,11 @@ section.academic, section.experience, section.formcontato{
     padding: 16px 12px;
 }
 
-.formcontato__textarea{
+.formcontato__text{
     padding-top: 16px;
-    resize: none;
+    resize:both;
     height: 133px;
+    display: inline-block;
 }
 
 .container__input-focus, .formcontato__form input:nth-child(3), .formcontato__textarea{
@@ -428,11 +439,7 @@ section.footer{
 
 /*Experiencia Profesional*/
 
-.formcontato__contacto{
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-}
+
 
 .formcontato__botao{
     font-weight:  400;
