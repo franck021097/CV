@@ -276,6 +276,12 @@ section.academic, section.experience, section.formcontato{
     color: #fff;
 }
 
+.experience__demo a, .experience__repo a, .experience__demo a button, .experience__repo button, .experience__demo a button:hover, .experience__repo button:hover{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
 /*Contacto*/
 
 
@@ -283,6 +289,10 @@ section.academic, section.experience, section.formcontato{
     display: flex;
     justify-content: center;
     gap: 32px;
+}
+
+.formcontato__text{
+    width: 35px;
 }
 
 .formcontato__title{
